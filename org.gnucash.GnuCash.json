@@ -303,6 +303,16 @@
         "--disable-webkit2",
         "--with-gtk=2.0"
       ],
+      "build-options": {
+        "arch": {
+          "arm": {
+            "config-opts": [ "--disable-jit" ]
+          },
+          "aarch64": {
+            "config-opts": [ "--disable-jit" ]
+          }
+        }
+      },
       "sources": [
         {
           "type": "archive",
