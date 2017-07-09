@@ -243,6 +243,7 @@
     },
     {
       "name": "libgnomecanvas",
+      "rm-configure": true,
       "cleanup": [
         "/share"
       ],
@@ -251,11 +252,25 @@
           "type": "archive",
           "url": "https://download.gnome.org/sources/libgnomecanvas/2.30/libgnomecanvas-2.30.3.tar.bz2",
           "sha256": "859b78e08489fce4d5c15c676fec1cd79782f115f516e8ad8bed6abcb8dedd40"
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "rm -f config.guess"
+          ]
+        },
+        {
+          "type": "script",
+          "commands": [
+            "autoreconf -fiv"
+          ],
+          "dest-filename": "autogen.sh"
         }
       ]
     },
     {
       "name": "libgsf",
+      "rm-configure": true,
       "cleanup": [
         "/bin",
         "/share"
@@ -265,6 +280,19 @@
           "type": "archive",
           "url": "https://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/libgsf-1.14.41.tar.xz",
           "sha256": "150b98586a1021d5c49b3d4d065d0aa3e3674ae31db131af5372499d2d3f08d3"
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "rm -f config.guess"
+          ]
+        },
+        {
+          "type": "script",
+          "commands": [
+            "autoreconf -fiv"
+          ],
+          "dest-filename": "autogen.sh"
         }
       ]
     },
@@ -287,7 +315,7 @@
         {
           "type": "script",
           "commands": [
-            "autoconf"
+            "autoreconf -fiv"
           ],
           "dest-filename": "autogen.sh"
         }
