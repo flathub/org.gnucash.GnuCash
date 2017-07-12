@@ -6,6 +6,7 @@
   "command": "gnucash",
   "rename-icon": "gnucash-icon",
   "rename-desktop-file": "gnucash.desktop",
+  "rename-appdata-file": "gnucash.appdata.xml",
   "finish-args": [
     "--share=ipc",
     "--socket=x11",
