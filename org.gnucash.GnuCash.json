@@ -313,6 +313,10 @@
           "path": "goffice-0.8-use-pkgconfig-for-pcre.patch"
         },
         {
+          "type": "patch",
+          "path": "goffice-0.8-Remove-gnome-compile-warnings.patch"
+        },
+        {
           "type": "script",
           "commands": [
             "autoreconf -fiv"

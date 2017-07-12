@@ -1,0 +1,16 @@
+diff --git a/configure.in b/configure.in
+index 8171038..0b51e9b 100644
+--- a/configure.in
++++ b/configure.in
+@@ -333,11 +333,6 @@ AC_CHECK_PROG(GLIB_GENMARSHAL, glib-genmarshal, glib-genmarshal)
+ AC_ARG_VAR(GDK_PIXBUF_CSOURCE, [The gdk-pixbuf-csource executable.])
+ AC_CHECK_PROG(GDK_PIXBUF_CSOURCE, gdk-pixbuf-csource, gdk-pixbuf-csource)
+ 
+-## this should come after `AC_PROG_CC'
+-ifdef([GNOME_COMPILE_WARNINGS],
+-	[GNOME_COMPILE_WARNINGS] CFLAGS="$CFLAGS $WARN_CFLAGS",
+-	[]
+-)
+ set_more_warnings=yes
+ if test "$GCC" = "yes" -a "x$set_more_warnings" != "xno"; then
+ 	warning_options="-Wsign-compare -Wpointer-arith -Wnested-externs \
