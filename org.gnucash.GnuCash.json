@@ -357,7 +357,7 @@
         },
         {
           "type": "patch",
-          "path": "webkitgtk-2.9.10-aarch64.patch"
+          "path": "webkitgtk-2.9.11-aarch64.patch"
         }
       ]
     },
