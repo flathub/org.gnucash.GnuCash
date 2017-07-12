@@ -9,6 +9,7 @@
   "rename-appdata-file": "gnucash.appdata.xml",
   "finish-args": [
     "--share=ipc",
+    "--share=network",
     "--socket=x11",
     "--filesystem=home",
     "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
