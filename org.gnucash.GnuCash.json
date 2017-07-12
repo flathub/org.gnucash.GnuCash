@@ -354,6 +354,10 @@
         {
           "type": "patch",
           "path": "webkitgtk-2.4.9-abs.patch"
+        },
+        {
+          "type": "patch",
+          "path": "webkitgtk-2.9.10-aarch64.patch"
         }
       ]
     },
