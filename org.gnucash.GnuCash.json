@@ -1,18 +1,18 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.24",
+  "runtime-version": "3.26",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "rename-icon": "gnucash-icon",
   "rename-desktop-file": "gnucash.desktop",
   "rename-appdata-file": "gnucash.appdata.xml",
   "finish-args": [
-    "--share=ipc",
+    "--socket=x11", "--share=ipc",
     "--share=network",
-    "--socket=x11",
     "--filesystem=home",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
   ],
   "cleanup": [
     "*.a",
@@ -113,7 +113,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.heanet.ie/mirrors/mariadb/mariadb-10.1.24/source/mariadb-10.1.24.tar.gz",
+          "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.24/source/mariadb-10.1.24.tar.gz",
           "sha256": "b3df99ae5b1ec8cf6cede4cbc4ae3f54ce66464549cba6d56d9ff4d24e4d551e"
         }
       ]
@@ -372,8 +372,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/sourceforge/gnucash/gnucash-2.6.16.tar.gz",
-          "sha256": "84c79c333937ccfdcc0b94f9eec78b707e27043402560c3fbc85a3eefa211c56"
+          "url": "https://github.com/Gnucash/gnucash/releases/download/2.6.18/gnucash-2.6.18-1.tar.bz2",
+          "sha256": "68730bcfcead7485011eb43d3b2c5df032c714571c81f9a15d33d8494fc4249d"
         }
       ]
     }
