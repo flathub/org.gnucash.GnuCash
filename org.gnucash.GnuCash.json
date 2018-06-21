@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "3.28",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "rename-icon": "gnucash-icon",
@@ -29,8 +29,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.hboehm.info/gc/gc_source/gc-7.6.0.tar.gz",
-          "sha256": "a14a28b1129be90e55cd6f71127ffc5594e1091d5d54131528c24cd0c03b7d90"
+          "url": "http://www.hboehm.info/gc/gc_source/gc-7.6.4.tar.gz",
+          "sha256": "b94c1f2535f98354811ee644dccab6e84a0cf73e477ca03fb5a3758fb1fecd1c"
         }
       ]
     },
@@ -42,8 +42,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.7.tar.xz",
-          "sha256": "2e3764512aaf2ce598af5a38818c0ea23dedf1ff5460070d1b6cee5c3336e797"
+          "url": "https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.10.tar.xz",
+          "sha256": "eb8fb2c3e4b6e2d336608377050892b54c3c983b646c561836550863003c05d7"
         }
       ]
     },
@@ -272,7 +272,6 @@
     },
     {
       "name": "libgsf",
-      "rm-configure": true,
       "cleanup": [
         "/bin",
         "/share"
@@ -280,21 +279,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/libgsf-1.14.41.tar.xz",
-          "sha256": "150b98586a1021d5c49b3d4d065d0aa3e3674ae31db131af5372499d2d3f08d3"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "rm -f config.guess"
-          ]
-        },
-        {
-          "type": "script",
-          "commands": [
-            "autoreconf -fiv"
-          ],
-          "dest-filename": "autogen.sh"
+          "url": "https://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/libgsf-1.14.43.tar.xz",
+          "sha256": "12944e3d6d9a6e4071e89dbf58348e1e93544f5f9266dd1a107a28d8001cee16"
         }
       ]
     },
@@ -363,6 +349,66 @@
         }
       ]
     },
+
+    {
+      "name": "opensp",
+      "rm-configure": true,
+      "config-opts": [ "--disable-doc-build" ],
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://downloads.sourceforge.net/project/openjade/opensp/1.5.2/OpenSP-1.5.2.tar.gz",
+              "sha256": "57f4898498a368918b0d49c826aa434bb5b703d2c3b169beb348016ab25617ce"
+          },
+          {
+              "type": "script",
+              "dest-filename": "autogen.sh",
+              "commands": [
+                  "autoreconf -vfi"
+              ]
+          }
+      ]
+    },
+    {
+      "name": "gengetopt",
+      "config-opts": [ 
+          "--prefix=/app"
+          ],
+      "rm-configure": true,
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.22.6.tar.gz",
+              "sha256": "30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7"
+          },
+          {
+              "type": "patch",
+              "path": "makefile.patch"
+          },
+          {
+              "type": "script",
+              "dest-filename": "autogen.sh",
+              "commands": [
+                  "autoreconf -vfi"
+              ]
+          }
+      ]
+    },
+    {
+      "name": "libofx",
+      "no-parallel-make": true,
+      "config-opts": [ 
+          "--with-opensp-includes=/app/include/OpenSP", 
+          "--with-opensp-libs=/lib"
+          ],
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://github.com/libofx/libofx/archive/0.9.12.tar.gz",
+              "sha256": "0288d0166b3e60e8ebbdcf4ac54b034082820d856a09912b748f2aec9b247130"
+          }
+      ]
+    },
     {
       "name": "gnucash",
       "cleanup": [
@@ -372,8 +418,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/2.6.19/gnucash-2.6.19.tar.bz2",
-          "sha256": "50b89367246ec2d51e9765bd6bd8c669e35ceb4ac5ab92636f76758a9f3f7fd1"
+          "url": "https://github.com/Gnucash/gnucash/releases/download/2.6.21a/gnucash-2.6.21.tar.bz2",
+          "sha256": "2c3bed2a9366ac0def3e1abf39e148b2850f5ef34c99d0497acd2643db4ffa58"
         }
       ]
     }
