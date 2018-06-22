@@ -345,6 +345,7 @@
     },
     {
       "name": "gnucash",
+      "buildsystem": "cmake-ninja",
       "cleanup": [
         "/share/info",
         "/share/doc"
@@ -352,8 +353,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/2.6.21a/gnucash-2.6.21.tar.bz2",
-          "sha256": "2c3bed2a9366ac0def3e1abf39e148b2850f5ef34c99d0497acd2643db4ffa58"
+          "url": "https://github.com/Gnucash/gnucash/releases/download/3.1/gnucash-3.1-1.tar.bz2",
+          "sha256": "a1ef66cec3b8b74b7b8bfe791ff12456796a69cc004427e8d9205b6872bdd261"
         }
       ]
     }
