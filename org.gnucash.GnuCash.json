@@ -52,9 +52,68 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/guile/guile-2.0.14.tar.xz",
-          "sha256": "e8442566256e1be14e51fc18839cd799b966bc5b16c6a1d7a7c35155a8619d82"
+          "url": "https://ftp.gnu.org/gnu/guile/guile-2.2.3.tar.xz",
+          "sha256": "8353a8849cd7aa77be66af04bd6bf7a6207440d2f8722e46672232bb9f0a4086"
         }
+      ]
+    },
+    {
+      "name": "opensp",
+      "rm-configure": true,
+      "config-opts": [ "--disable-doc-build" ],
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://downloads.sourceforge.net/project/openjade/opensp/1.5.2/OpenSP-1.5.2.tar.gz",
+              "sha256": "57f4898498a368918b0d49c826aa434bb5b703d2c3b169beb348016ab25617ce"
+          },
+          {
+              "type": "script",
+              "dest-filename": "autogen.sh",
+              "commands": [
+                  "autoreconf -vfi"
+              ]
+          }
+      ]
+    },
+    {
+      "name": "gengetopt",
+      "config-opts": [
+          "--prefix=/app"
+          ],
+      "rm-configure": true,
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.22.6.tar.gz",
+              "sha256": "30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7"
+          },
+          {
+              "type": "patch",
+              "path": "gengetopt-makefile.patch"
+          },
+          {
+              "type": "script",
+              "dest-filename": "autogen.sh",
+              "commands": [
+                  "autoreconf -vfi"
+              ]
+          }
+      ]
+    },
+    {
+      "name": "libofx",
+      "no-parallel-make": true,
+      "config-opts": [
+          "--with-opensp-includes=/app/include/OpenSP",
+          "--with-opensp-libs=/lib"
+          ],
+      "sources": [
+          {
+              "type": "archive",
+              "url": "https://github.com/libofx/libofx/archive/0.9.12.tar.gz",
+              "sha256": "0288d0166b3e60e8ebbdcf4ac54b034082820d856a09912b748f2aec9b247130"
+          }
       ]
     },
     {
@@ -66,8 +125,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2",
-          "sha256": "9409d85664b4f135b77518b0b118c549009dc10f6cba14557d170476611f6780"
+          "url": "https://github.com/jemalloc/jemalloc/releases/download/5.0.1/jemalloc-5.0.1.tar.bz2",
+          "sha256": "4814781d395b0ef093b21a08e8e6e0bd3dab8762f9935bbfb71679b0dea7c3e9"
         }
       ]
     },
@@ -113,8 +172,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.24/source/mariadb-10.1.24.tar.gz",
-          "sha256": "b3df99ae5b1ec8cf6cede4cbc4ae3f54ce66464549cba6d56d9ff4d24e4d551e"
+          "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.32/source/mariadb-10.1.32.tar.gz",
+          "sha256": "0e2aae6a6a190d07c8e36e87dd43377057fa82651ca3c583462563f3e9369096"
         }
       ]
     },
@@ -133,8 +192,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.postgresql.org/pub/source/v9.6.3/postgresql-9.6.3.tar.bz2",
-          "sha256": "1645b3736901f6d854e695a937389e68ff2066ce0cde9d73919d6ab7c995b9c6"
+          "url": "https://ftp.postgresql.org/pub/source/v9.6.8/postgresql-9.6.8.tar.bz2",
+          "sha256": "eafdb3b912e9ec34bdd28b651d00226a6253ba65036cb9a41cad2d9e82e3eb70"
         }
       ]
     },
@@ -188,226 +247,101 @@
       ]
     },
     {
-      "name": "libart-gpl",
-      "rm-configure": true,
-      "cleanup": [
-        "/bin",
-        "/share"
-      ],
+      "name": "xmlsec",
       "sources": [
         {
           "type": "archive",
-          "url": "http://ftp.gnome.org/pub/GNOME/sources/libart_lgpl/2.3/libart_lgpl-2.3.21.tar.bz2",
-          "sha256": "fdc11e74c10fc9ffe4188537e2b370c0abacca7d89021d4d303afdf7fd7476fa"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "rm -f config.guess"
-          ]
-        },
-        {
-          "type": "script",
-          "commands": [
-            "autoreconf -fiv"
-          ],
-          "dest-filename": "autogen.sh"
+          "url": "https://www.aleksey.com/xmlsec/download/xmlsec1-1.2.26.tar.gz",
+          "sha256": "8d8276c9c720ca42a3b0023df8b7ae41a2d6c5f9aa8d20ed1672d84cc8982d50"
         }
       ]
     },
     {
-      "name": "libglade",
-      "rm-configure": true,
-      "cleanup": [
-        "/bin",
-        "/share"
-      ],
+      "name": "ktoblzcheck",
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.gnome.org/sources/libglade/2.6/libglade-2.6.4.tar.bz2",
-          "sha256": "64361e7647839d36ed8336d992fd210d3e8139882269bed47dc4674980165dec"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "rm -f config.guess"
-          ]
-        },
-        {
-          "type": "script",
-          "commands": [
-            "autoreconf -fiv"
-          ],
-          "dest-filename": "autogen.sh"
+          "url": "http://downloads.sourceforge.net/project/ktoblzcheck/ktoblzcheck-1.49.tar.gz",
+          "sha256": "e8971bc6689ea72b174c194bd43ba2c0b65112b0c3f9fd2371562e0c3ab57d29"
         }
       ]
     },
     {
-      "name": "libgnomecanvas",
-      "rm-configure": true,
-      "cleanup": [
-        "/share"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.gnome.org/sources/libgnomecanvas/2.30/libgnomecanvas-2.30.3.tar.bz2",
-          "sha256": "859b78e08489fce4d5c15c676fec1cd79782f115f516e8ad8bed6abcb8dedd40"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "rm -f config.guess"
-          ]
-        },
-        {
-          "type": "script",
-          "commands": [
-            "autoreconf -fiv"
-          ],
-          "dest-filename": "autogen.sh"
-        }
-      ]
-    },
-    {
-      "name": "libgsf",
-      "cleanup": [
-        "/bin",
-        "/share"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://ftp.gnome.org/pub/gnome/sources/libgsf/1.14/libgsf-1.14.43.tar.xz",
-          "sha256": "12944e3d6d9a6e4071e89dbf58348e1e93544f5f9266dd1a107a28d8001cee16"
-        }
-      ]
-    },
-    {
-      "name": "goffice",
-      "rm-configure": true,
-      "cleanup": [
-        "/share"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.gnome.org/sources/goffice/0.8/goffice-0.8.17.tar.xz",
-          "sha256": "165070beb67b84580afe80a8a100b674a81d553ab791acd72ac0c655f4fadb15"
-        },
-        {
-          "type": "patch",
-          "path": "goffice-0.8-use-pkgconfig-for-pcre.patch"
-        },
-        {
-          "type": "patch",
-          "path": "goffice-0.8-Remove-gnome-compile-warnings.patch"
-        },
-        {
-          "type": "script",
-          "commands": [
-            "autoreconf -fiv"
-          ],
-          "dest-filename": "autogen.sh"
-        }
-      ]
-    },
-    {
-      "name": "webkitgtk",
-      "cleanup": [
-        "/bin",
-        "/share"
-      ],
+      "name": "gwenhywfar",
       "config-opts": [
-        "--disable-webkit2",
-        "--with-gtk=2.0"
+        "--with-guis=''"
       ],
-      "build-options": {
-        "arch": {
-          "arm": {
-            "config-opts": [ "--disable-jit" ]
-          },
-          "aarch64": {
-            "config-opts": [ "--disable-jit" ]
-          }
+      "sources": [
+        {
+          "type": "script",
+          "dest-filename": "libgcrypt-config",
+          "commands": [
+            "case $1 in",
+            "--version) pkg-config --modversion libgcrypt ;;",
+            "--libs) echo $(pkg-config --libs libgcrypt) -lgpg-error ;;",
+            "*) pkg-config $* libgcrypt",
+            "esac"
+          ]
+        },
+        {
+          "type": "shell",
+          "commands": [
+            "install -Dm755 libgcrypt-config /app/bin/libgcrypt-config"
+          ]
+        },
+        {
+          "type": "archive",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/4/gwenhywfar-4.99.0beta.tar.gz",
+          "sha256": "983e73af1c0fa5fd827ad8ee5e254010f8ce59f3f3791d0d0ebae34002ddbd20"
         }
-      },
+      ]
+    },
+    {
+      "name": "aqbanking",
+      "no-parallel-make": true,
       "sources": [
         {
           "type": "archive",
-          "url": "https://webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz",
-          "sha256": "588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7"
-        },
-        {
-          "type": "patch",
-          "path": "webkitgtk-2.4.9-abs.patch"
-        },
-        {
-          "type": "patch",
-          "path": "webkitgtk-2.9.11-aarch64.patch"
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/2/aqbanking-5.99.0beta.tar.gz",
+          "sha256": "fc5f9ae35bc35187621e10cdb773303dc6209b65517fbf19af51e2484b544616"
         }
       ]
     },
+    {
+      "name": "googlemock",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/google/googlemock/archive/release-1.7.0.tar.gz#/googlemock-1.7.0.tar.gz",
+          "sha256": "3f20b6acb37e5a98e8c4518165711e3e35d47deb6cdb5a4dd4566563b5efd232"
+        }
+      ]
+    },
+    {
+      "name": "googletest",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/google/googletest/archive/release-1.7.0.tar.gz#/googletest-1.7.0.tar.gz",
+          "sha256": "f73a6546fdf9fce9ff93a5015e0333a8af3062a152a9ad6bcb772c96687016cc"
 
-    {
-      "name": "opensp",
-      "rm-configure": true,
-      "config-opts": [ "--disable-doc-build" ],
-      "sources": [
-          {
-              "type": "archive",
-              "url": "https://downloads.sourceforge.net/project/openjade/opensp/1.5.2/OpenSP-1.5.2.tar.gz",
-              "sha256": "57f4898498a368918b0d49c826aa434bb5b703d2c3b169beb348016ab25617ce"
-          },
-          {
-              "type": "script",
-              "dest-filename": "autogen.sh",
-              "commands": [
-                  "autoreconf -vfi"
-              ]
-          }
+        }
       ]
     },
     {
-      "name": "gengetopt",
-      "config-opts": [ 
-          "--prefix=/app"
-          ],
-      "rm-configure": true,
+      "name": "boost",
+      "buildsystem": "simple",
       "sources": [
           {
               "type": "archive",
-              "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.22.6.tar.gz",
-              "sha256": "30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7"
-          },
-          {
-              "type": "patch",
-              "path": "makefile.patch"
-          },
-          {
-              "type": "script",
-              "dest-filename": "autogen.sh",
-              "commands": [
-                  "autoreconf -vfi"
-              ]
+              "url": "https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2",
+              "sha256": "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9"
           }
-      ]
-    },
-    {
-      "name": "libofx",
-      "no-parallel-make": true,
-      "config-opts": [ 
-          "--with-opensp-includes=/app/include/OpenSP", 
-          "--with-opensp-libs=/lib"
-          ],
-      "sources": [
-          {
-              "type": "archive",
-              "url": "https://github.com/libofx/libofx/archive/0.9.12.tar.gz",
-              "sha256": "0288d0166b3e60e8ebbdcf4ac54b034082820d856a09912b748f2aec9b247130"
-          }
-      ]
+      ],
+      "build-commands": [
+          "./bootstrap.sh --prefix=/app",
+          "./b2 -j $FLATPAK_BUILDER_N_JOBS install link=static variant=release --layout=system"
+        ]
     },
     {
       "name": "gnucash",
