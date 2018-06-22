@@ -318,8 +318,9 @@
           }
       ],
       "build-commands": [
-          "./bootstrap.sh --prefix=/app",
-          "./b2 -j $FLATPAK_BUILDER_N_JOBS install link=static variant=release --layout=system"
+          "./bootstrap.sh --prefix=/app --with-libraries=locale,filesystem,system,date_time,regex",
+          "./b2 headers",
+          "./b2 -j$FLATPAK_BUILDER_N_JOBS install variant=release --layout=system"
         ]
     },
     {
