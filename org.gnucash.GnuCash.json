@@ -308,27 +308,6 @@
       ]
     },
     {
-      "name": "googlemock",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/google/googlemock/archive/release-1.7.0.tar.gz#/googlemock-1.7.0.tar.gz",
-          "sha256": "3f20b6acb37e5a98e8c4518165711e3e35d47deb6cdb5a4dd4566563b5efd232"
-        }
-      ]
-    },
-    {
-      "name": "googletest",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/google/googletest/archive/release-1.7.0.tar.gz#/googletest-1.7.0.tar.gz",
-          "sha256": "f73a6546fdf9fce9ff93a5015e0333a8af3062a152a9ad6bcb772c96687016cc"
-
-        }
-      ]
-    },
-    {
       "name": "boost",
       "buildsystem": "simple",
       "sources": [
