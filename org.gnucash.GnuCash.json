@@ -291,8 +291,9 @@
         },
         {
           "type": "archive",
-          "url": "https://www.aquamaniac.de/rdm/attachments/download/4/gwenhywfar-4.99.0beta.tar.gz",
-          "sha256": "983e73af1c0fa5fd827ad8ee5e254010f8ce59f3f3791d0d0ebae34002ddbd20"
+          "url": "https://www.aquamaniac.de/sites/download/download.php?package=01&release=208&file=02&dummy=gwenhywfar-4.20.0.tar.gz",
+          "dest-filename": "gwenhywfar.tar.gz",
+          "sha256": "5a88daabba1388f9528590aab5de527a12dd44a7da4572ce48469a29911b0fb0"
         }
       ]
     },
