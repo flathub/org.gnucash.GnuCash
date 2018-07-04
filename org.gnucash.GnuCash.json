@@ -4,6 +4,7 @@
   "runtime-version": "3.28",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
+  "copy-icon": true,
   "rename-icon": "gnucash-icon",
   "rename-desktop-file": "gnucash.desktop",
   "rename-appdata-file": "gnucash.appdata.xml",
