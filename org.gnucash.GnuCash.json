@@ -354,8 +354,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/3.2/gnucash-3.2.tar.bz2",
-          "sha256": "80056d5c4e37e570ee57e5ce1a664dfa16238008a9e8f603e5f8a75c86ce8776"
+          "url": "https://github.com/Gnucash/gnucash/releases/download/3.4/gnucash-3.4.tar.bz2",
+          "sha256": "a254883c8f7e34f2e19ebdc6a0185489d9027341d7d62a6f1ef815a8c9e342d7"
         }
       ]
     }
