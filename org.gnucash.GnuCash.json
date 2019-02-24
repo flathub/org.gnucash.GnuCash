@@ -288,23 +288,6 @@
       ],
       "sources": [
         {
-          "type": "script",
-          "dest-filename": "libgcrypt-config",
-          "commands": [
-            "case $1 in",
-            "--version) pkg-config --modversion libgcrypt ;;",
-            "--libs) echo $(pkg-config --libs libgcrypt) -lgpg-error ;;",
-            "*) pkg-config $* libgcrypt",
-            "esac"
-          ]
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "install -Dm755 libgcrypt-config /app/bin/libgcrypt-config"
-          ]
-        },
-        {
           "type": "archive",
           "url": "https://www.aquamaniac.de/sites/download/download.php?package=01&release=208&file=02&dummy=gwenhywfar-4.20.0.tar.gz",
           "dest-filename": "gwenhywfar.tar.gz",
