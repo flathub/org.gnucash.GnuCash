@@ -23,20 +23,6 @@
   ],
   "modules": [
     {
-      "name": "libatomic_ops",
-      "config-opts": [
-        "--enable-shared",
-        "--disable-static"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/ivmai/libatomic_ops/releases/download/v7.6.8/libatomic_ops-7.6.8.tar.gz",
-          "sha256": "1d6a279edf81767e74d2ad2c9fce09459bc65f12c6525a40b0cb3e53c089f665"
-        }
-      ]
-    },
-    {
       "name": "gc",
       "cleanup": [
         "/share"
@@ -44,8 +30,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.hboehm.info/gc/gc_source/gc-7.6.4.tar.gz",
-          "sha256": "b94c1f2535f98354811ee644dccab6e84a0cf73e477ca03fb5a3758fb1fecd1c"
+          "url": "http://www.hboehm.info/gc/gc_source/gc-8.0.4.tar.gz",
+          "sha256": "436a0ddc67b1ac0b0405b61a9675bca9e075c8156f4debd1d06f3a56c7cd289d"
         }
       ]
     },
