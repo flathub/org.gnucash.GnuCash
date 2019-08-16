@@ -113,8 +113,8 @@
       "sources": [
           {
               "type": "archive",
-              "url": "https://github.com/libofx/libofx/archive/0.9.12.tar.gz",
-              "sha256": "0288d0166b3e60e8ebbdcf4ac54b034082820d856a09912b748f2aec9b247130"
+              "url": "https://github.com/libofx/libofx/archive/0.9.14.tar.gz",
+              "sha256": "85a732efe3026e96fe1cf694ebdcf5d2c3b67adba85b9019abac44e7c43d8ce5"
           }
       ]
     },
@@ -267,25 +267,14 @@
       ]
     },
     {
-      "name": "ktoblzcheck",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://downloads.sourceforge.net/project/ktoblzcheck/ktoblzcheck-1.49.tar.gz",
-          "sha256": "e8971bc6689ea72b174c194bd43ba2c0b65112b0c3f9fd2371562e0c3ab57d29"
-        }
-      ]
-    },
-    {
       "name": "gwenhywfar",
       "config-opts": [
         "--with-guis=''"
-      ],
+        ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.aquamaniac.de/sites/download/download.php?package=01&release=208&file=02&dummy=gwenhywfar-4.20.0.tar.gz",
-          "dest-filename": "gwenhywfar.tar.gz",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/10/gwenhywfar-4.20.0.tar.gz",
           "sha256": "5a88daabba1388f9528590aab5de527a12dd44a7da4572ce48469a29911b0fb0"
         }
       ]
@@ -296,9 +285,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.aquamaniac.de/sites/download/download.php?package=03&release=217&file=02&dummy=aqbanking-5.7.8.tar.gz",
-          "dest-filename": "aqbanking.tar.gz",
-          "sha256": "16f86e4cc49a9eaaa8dfe3206607e627873208bce45a70030c3caea9b5afc768"
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/105/aqbanking-5.8.1.tar.gz",
+          "sha256": "af063a75ba401de3538f41cca0c7001950086b3e2d4f190ffe3ddfeea1b08454"
         }
       ]
     },
@@ -343,8 +331,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/3.4/gnucash-3.4.tar.bz2",
-          "sha256": "a254883c8f7e34f2e19ebdc6a0185489d9027341d7d62a6f1ef815a8c9e342d7"
+          "url": "https://github.com/Gnucash/gnucash/releases/download/3.6/gnucash-3.6.tar.bz2",
+          "sha256": "f1cb86de60bb0eb2cf5c2c3868e7dab7d889017e233230f944f158f84eb85f25"
         }
       ]
     }
