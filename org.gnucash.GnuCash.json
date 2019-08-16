@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.32",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "copy-icon": true,
@@ -270,7 +270,7 @@
       "name": "gwenhywfar",
       "config-opts": [
         "--with-guis=''"
-        ],
+      ],
       "sources": [
         {
           "type": "archive",
