@@ -335,6 +335,22 @@
           "sha256": "f1cb86de60bb0eb2cf5c2c3868e7dab7d889017e233230f944f158f84eb85f25"
         }
       ]
+    },
+    {
+      "name": "gnucash-docs",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/Gnucash/gnucash/releases/download/3.6/gnucash-docs-3.6.tar.gz",
+          "sha256": "32d373a4faa96cde2bba564bc8d7143d6317f121c488492f2dc5ebe99b4b6163"
+        },
+        {
+          "type": "patch",
+          "paths": [
+            "add-dtd.patch"
+          ]
+        }
+      ]
     }
   ]
 }
