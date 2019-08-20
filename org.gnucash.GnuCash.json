@@ -333,6 +333,12 @@
           "type": "archive",
           "url": "https://github.com/Gnucash/gnucash/releases/download/3.6/gnucash-3.6.tar.bz2",
           "sha256": "f1cb86de60bb0eb2cf5c2c3868e7dab7d889017e233230f944f158f84eb85f25"
+        },
+        {
+          "type": "patch",
+          "paths": [
+            "appdata.patch"
+          ]
         }
       ]
     },

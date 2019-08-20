@@ -1,0 +1,18 @@
+diff --git a/gnucash/gnome/gnucash.appdata.xml.in b/gnucash/gnome/gnucash.appdata.xml.in
+index 81aa28ade..94833d0a9 100644
+--- a/gnucash/gnome/gnucash.appdata.xml.in
++++ b/gnucash/gnome/gnucash.appdata.xml.in
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
++<!-- Copyright 2019 Multiple Authors, see included AUTHORS file. -->
+ <component>
+   <id>org.gnucash.GnuCash</id>
+   <launchable type="desktop-id">gnucash.desktop</launchable>
+@@ -47,4 +48,7 @@
+   <url type="donation">https://gnucash.org/donate.phtml</url>
+   <url type="translate">https://wiki.gnucash.org/wiki/Translation</url>
+   <update_contact>gnucash-devel@gnucash.org</update_contact>
++  <releases>
++      <release date="2019-06-30" version="3.6" />
++  </releases>
+ </component>
