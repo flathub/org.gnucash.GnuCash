@@ -267,28 +267,28 @@
       ]
     },
     {
-      "name": "gwenhywfar",
-      "config-opts": [
+        "name": "gwenhywfar",
+        "config-opts": [
         "--with-guis=''"
-      ],
-      "sources": [
+        ],
+        "sources": [
         {
-          "type": "archive",
-          "url": "https://www.aquamaniac.de/rdm/attachments/download/10/gwenhywfar-4.20.0.tar.gz",
-          "sha256": "5a88daabba1388f9528590aab5de527a12dd44a7da4572ce48469a29911b0fb0"
+            "type": "archive",
+            "url": "https://www.aquamaniac.de/rdm/attachments/download/108/gwenhywfar-4.20.2.tar.gz",
+            "sha256": "0f4fd92351c8a11f053aa482fc5c459499db3dc78dd8bb469e878890ef3d3270"
         }
-      ]
+        ]
     },
     {
-      "name": "aqbanking",
-      "no-parallel-make": true,
-      "sources": [
+        "name": "aqbanking",
+        "no-parallel-make": true,
+        "sources": [
         {
-          "type": "archive",
-          "url": "https://www.aquamaniac.de/rdm/attachments/download/105/aqbanking-5.8.1.tar.gz",
-          "sha256": "af063a75ba401de3538f41cca0c7001950086b3e2d4f190ffe3ddfeea1b08454"
+            "type": "archive",
+            "url": "https://www.aquamaniac.de/rdm/attachments/download/107/aqbanking-5.8.2.tar.gz",
+            "sha256": "93ca523fe175e72042db75f8c3fc6255ab058cf82caf52796e15f030809fb15e"
         }
-      ]
+        ]
     },
     {
       "name": "boost",
