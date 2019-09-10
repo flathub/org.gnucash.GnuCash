@@ -267,28 +267,28 @@
       ]
     },
     {
-        "name": "gwenhywfar",
-        "config-opts": [
+      "name": "gwenhywfar",
+      "config-opts": [
         "--with-guis=''"
-        ],
-        "sources": [
+      ],
+      "sources": [
         {
-            "type": "archive",
-            "url": "https://www.aquamaniac.de/rdm/attachments/download/108/gwenhywfar-4.20.2.tar.gz",
-            "sha256": "0f4fd92351c8a11f053aa482fc5c459499db3dc78dd8bb469e878890ef3d3270"
+          "type": "archive",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/108/gwenhywfar-4.20.2.tar.gz",
+          "sha256": "0f4fd92351c8a11f053aa482fc5c459499db3dc78dd8bb469e878890ef3d3270"
         }
-        ]
+      ]
     },
     {
-        "name": "aqbanking",
-        "no-parallel-make": true,
-        "sources": [
+      "name": "aqbanking",
+      "no-parallel-make": true,
+      "sources": [
         {
-            "type": "archive",
-            "url": "https://www.aquamaniac.de/rdm/attachments/download/107/aqbanking-5.8.2.tar.gz",
-            "sha256": "93ca523fe175e72042db75f8c3fc6255ab058cf82caf52796e15f030809fb15e"
+          "type": "archive",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/107/aqbanking-5.8.2.tar.gz",
+          "sha256": "93ca523fe175e72042db75f8c3fc6255ab058cf82caf52796e15f030809fb15e"
         }
-        ]
+      ]
     },
     {
       "name": "boost",
@@ -318,6 +318,7 @@
         }
       ]
     },
+
     {
       "name": "gnucash",
       "buildsystem": "cmake-ninja",
@@ -329,16 +330,10 @@
         "/share/doc"
       ],
       "sources": [
-        {
+      {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/3.6/gnucash-3.6.tar.bz2",
-          "sha256": "f1cb86de60bb0eb2cf5c2c3868e7dab7d889017e233230f944f158f84eb85f25"
-        },
-        {
-          "type": "patch",
-          "paths": [
-            "appdata.patch"
-          ]
+          "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.7/gnucash-3.7.tar.bz2",
+          "sha256": "6b8eb09f3980531509bcb3a589ab0334d827c32f860ce8a209aa2fe0ed8858b4"
         }
       ]
     },
@@ -347,14 +342,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Gnucash/gnucash/releases/download/3.6/gnucash-docs-3.6.tar.gz",
-          "sha256": "32d373a4faa96cde2bba564bc8d7143d6317f121c488492f2dc5ebe99b4b6163"
-        },
-        {
-          "type": "patch",
-          "paths": [
-            "add-dtd.patch"
-          ]
+          "url": "http://downloads.sourceforge.net/gnucash/gnucash-docs/gnucash-docs-3.7.tar.gz",
+          "sha256": "393919c12e7a0711b113cca3af83c2dcd195eabfa83ed2e985cbb91951a990c0"
         }
       ]
     }
