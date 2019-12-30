@@ -268,15 +268,42 @@
       ]
     },
     {
-      "name": "gwenhywfar",
+      "name": "libpcsclite",
       "config-opts": [
-        "--with-guis=''"
+        "--disable-libsystemd",
+        "--disable-serial",
+        "--disable-usb",
+        "--disable-libudev",
+        "--with-systemdsystemunitdir=no"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.aquamaniac.de/rdm/attachments/download/108/gwenhywfar-4.20.2.tar.gz",
-          "sha256": "0f4fd92351c8a11f053aa482fc5c459499db3dc78dd8bb469e878890ef3d3270"
+          "url": "https://pcsclite.apdu.fr/files/pcsc-lite-1.8.24.tar.bz2",
+          "sha256": "b81864fa6a5ec776639c02ae89998955f7702a8d10e8b8f70023c5a599d97568"
+        }
+      ]
+    },
+    {
+      "name": "gwenhywfar",
+      "config-opts": [
+        "--with-guis='gtk3'"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/223/gwenhywfar-4.99.25rc9.tar.gz",
+          "sha256": "783eb770df1b62aa55ccc5a23d38403c0ca8d1a450901fc8c3697bf7013a9a93"
+        }
+      ]
+    },
+    {
+      "name": "libchipcard",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/221/libchipcard-5.1.4rc1.tar.gz",
+          "sha256": "d93cbde9584d1f02f8d80cc76117a9d60506f873221bc5a3c788eec130cd2fd0"
         }
       ]
     },
@@ -286,8 +313,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.aquamaniac.de/rdm/attachments/download/107/aqbanking-5.8.2.tar.gz",
-          "sha256": "93ca523fe175e72042db75f8c3fc6255ab058cf82caf52796e15f030809fb15e"
+          "url": "https://www.aquamaniac.de/rdm/attachments/download/224/aqbanking-5.99.44beta.tar.gz",
+          "sha256": "abf1da7f4c0b6b83f7622351de4677bc4ec00b52a0cc9b2e556f14cfc743f2b1"
         }
       ]
     },
@@ -338,14 +365,10 @@
         "/share/doc/gnucash/projects.html"
       ],
       "sources": [
-        {
-            "type": "archive",
-            "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.7/gnucash-3.7.tar.bz2",
-            "sha256": "6b8eb09f3980531509bcb3a589ab0334d827c32f860ce8a209aa2fe0ed8858b4"
-        },
-        {
-            "type": "patch",
-            "path": "set-component-type-in-appdata-metadata.patch"
+      {
+          "type": "archive",
+          "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.8/gnucash-3.8b.tar.bz2",
+          "sha256": "0f5eca83d8836a325d9a02c6ed7b4d53e59abcff974e5d90914c9e15d7a87f37"
         }
       ]
     },
@@ -354,8 +377,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.sourceforge.net/gnucash/gnucash-docs/gnucash-docs-3.7.tar.gz",
-          "sha256": "393919c12e7a0711b113cca3af83c2dcd195eabfa83ed2e985cbb91951a990c0"
+          "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.8/gnucash-docs-3.8.tar.gz",
+          "sha256": "a2504c9a0e66db154dd6498a0019ccf13219c4cb8553fee6ec441cd5209b66a7"
         }
       ]
     }
