@@ -1,0 +1,16 @@
+{
+    "name": "boost",
+    "buildsystem": "simple",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2",
+            "sha256": "5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9"
+        }
+    ],
+    "build-commands": [
+        "./bootstrap.sh --prefix=/app --with-libraries=locale,filesystem,system,date_time,regex",
+        "./b2 headers",
+        "./b2 -j$FLATPAK_BUILDER_N_JOBS install variant=release --layout=system"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "gnucash-release-modules",
+    "modules": [
+        {
+            "name": "gnucash",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBOOST_ROOT=/app"
+            ],
+            "cleanup": [
+                "/share/info",
+                "/share/doc/gnucash/*.csv",
+                "/share/doc/gnucash/*.qif",
+                "/share/doc/gnucash/*.gnucash",
+                "/share/doc/gnucash/ChangeLog*",
+                "/share/doc/gnucash/HACKING",
+                "/share/doc/gnucash/README*",
+                "/share/doc/gnucash/guile-hackers.txt",
+                "/share/doc/gnucash/projects.html"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.8/gnucash-3.8b.tar.bz2",
+                    "sha256": "0f5eca83d8836a325d9a02c6ed7b4d53e59abcff974e5d90914c9e15d7a87f37"
+                }
+            ]
+        },
+        {
+            "name": "gnucash-docs",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.8/gnucash-docs-3.8.tar.gz",
+                    "sha256": "a2504c9a0e66db154dd6498a0019ccf13219c4cb8553fee6ec441cd5209b66a7"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,20 @@
+{
+    "name": "postgresql",
+    "no-make-install": true,
+    "post-install": [
+        "make -C src/include install",
+        "make -C src/interfaces install",
+        "make -C src/bin/pg_config install"
+    ],
+    "cleanup": [
+        "/bin",
+        "/share"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://ftp.postgresql.org/pub/source/v9.6.8/postgresql-9.6.8.tar.bz2",
+            "sha256": "eafdb3b912e9ec34bdd28b651d00226a6253ba65036cb9a41cad2d9e82e3eb70"
+        }
+    ]
+}
