@@ -5,7 +5,8 @@
             "name": "gnucash",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DBOOST_ROOT=/app"
+                "-DBOOST_ROOT=/app",
+                "-DGNUCASH_BUILD_ID='Flathub 3.8b-2'"
             ],
             "cleanup": [
                 "/share/info",
