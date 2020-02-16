@@ -32,6 +32,7 @@
     "modules/aqbanking.json",
     "modules/boost.json",
     "modules/googletest.json",
+    "modules/perl.json",
     "./gnucash.json"
   ]
 }

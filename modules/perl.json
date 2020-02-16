@@ -1,0 +1,47 @@
+{
+    "name": "perl-with-finance-quote",
+    "modules": [
+        {
+            "name": "perl",
+            "no-autogen": true,
+            "config-opts": [
+                "-des",
+                "-Duseshrplib"
+            ],
+            "build-options": {
+                "cflags": "-fPIC",
+                "ldflags": "-fpic"
+            },
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.cpan.org/src/5.0/perl-5.28.0.tar.gz",
+                    "sha256": "7e929f64d4cb0e9d1159d4a59fc89394e27fa1f7004d0836ca0d514685406ea8"
+                },
+                {
+                    "type": "script",
+                    "dest-filename": "configure",
+                    "commands": [
+                        "exec ./configure.gnu $@"
+                    ]
+                }
+            ],
+            "post-install": [
+                "chmod -R u+w /app/lib/perl5"
+            ]
+        },
+        {
+            "name": "finance-quote",
+            "buildsystem": "simple",
+            "build-commands": [
+                "perl-libs/install.sh"
+            ],
+            "sources": [
+                "./finance-quote-sources.json"
+            ],
+            "post-install": [
+                "chmod -Rf u+w /app/lib/perl5/site_perl"
+            ]
+        }
+    ]
+}
