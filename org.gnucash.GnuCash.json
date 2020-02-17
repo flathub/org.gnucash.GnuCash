@@ -53,7 +53,12 @@
             "/share/doc/gnucash/projects.html"
         ],
         "sources": [
-            "./gnucash-source.json"
+            "./gnucash-source.json",
+            {
+                "type": "file",
+                "path": "gnucash.releases.xml",
+                "dest": "gnucash/gnome"
+            }
         ]
     },
     {

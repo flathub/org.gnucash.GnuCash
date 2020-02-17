@@ -1,0 +1,14 @@
+<release version="3.8-2" date="2020-02-16">
+    <description>
+        <ul>
+            <li>2020-02-16 - Set a custom BUILD_ID to differentiate this 3.8 build from an earlier 3.8 build (Geert Janssens)</li>
+            <li>2020-02-16 - Implement Finance::Quote support (Geert Janssens)</li>
+            <li>2020-02-15 - Pull manifest modularization changes from gnucash-on-flatpak repo (Geert Janssens)</li>
+        </ul>
+    </description>
+</release>
+<release version="3.8" date="2019-12-30">
+    <description>
+        <p>Update to upstream gnucash 3.8b</p>
+    </description>
+</release>
