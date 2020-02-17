@@ -1,3 +1,13 @@
+<release version="3.8-7" date="2020-02-17">
+    <description>
+        <ul>
+            <li>2020-02-17 - Set up gnucash.releases.xml to override the gnucash default (Geert Janssens)</li>
+            <li>2020-02-17 - More modularization (Geert Janssens)</li>
+            <li>2020-02-16 - Aqbanking dependency updates (Geert Janssens)</li>
+            <li>2020-02-16 - switch to cmake build system for gnucash-docs (Geert Janssens)</li>
+        </ul>
+    </description>
+</release>
 <release version="3.8-2" date="2020-02-16">
     <description>
         <ul>
