@@ -1,0 +1,3 @@
+{
+    "name": "gnucash-extra-modules"
+}
