@@ -1,3 +1,11 @@
+<release version="3.8-10" date="2020-03-25">
+    <description>
+        <ul>
+            <li>2020-03-25 - Update to aqbanking-6.1.4 (Geert Janssens)</li>
+            <li>2020-02-17 - Remove obsolete file (Geert Janssens)</li>
+        </ul>
+    </description>
+</release>
 <release version="3.8-7" date="2020-02-17">
     <description>
         <ul>
