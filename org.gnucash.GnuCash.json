@@ -33,6 +33,7 @@
     "modules/boost.json",
     "modules/googletest.json",
     "modules/perl.json",
+    "modules/swig.json",
     "./gnucash-extra-modules.json",
     {
         "name": "gnucash",
