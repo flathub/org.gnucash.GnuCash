@@ -1,5 +1,5 @@
 {
     "type": "archive",
-    "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/3.10/gnucash-3.10.tar.bz2",
-    "sha256": "b60772c276a63639964d1e24c795fbb9a7c0c6c45959168fe5cdfe08eb796f16"
+    "url": "http://downloads.sourceforge.net/gnucash/gnucash (unstable)/3.901/gnucash-3.901.tar.bz2",
+    "sha256": "8235b76bacaa0bbde068770543c3fcc966533a746de5b43fdef43d5e0483b4f4"
 }
