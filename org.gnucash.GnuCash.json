@@ -40,7 +40,7 @@
         "buildsystem": "cmake-ninja",
         "config-opts": [
             "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 3.10-1'"
+            "-DGNUCASH_BUILD_ID='Flathub 3.901'"
         ],
         "cleanup": [
             "/share/info",
