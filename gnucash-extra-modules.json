@@ -1,6 +1,3 @@
 {
-    "name": "gnucash-extra-modules",
-    "modules": [
-        "modules/swig.json"
-    ]
+    "name": "gnucash-extra-modules"
 }
