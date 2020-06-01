@@ -1,11 +1,8 @@
-<release version="3.902" date="2020-04-27">
+<release version="3.903" date="2020-06-01">
     <description>
       <ul>
-        <li>2020-04-26 - Swig is now a normal module required for both build types. (John Ralls)</li>
-        <li>2020-04-26 - Upgrade boost to latest release, build for C++17. (John Ralls)</li>
-        <li>2020-04-26 - Update to upstream gnucash 3.901. (John Ralls)</li>
-        <li>2020-04-27 - Rename the release 3.902 because of build problems. (John Ralls)</li>
-
+        <li>2020-06-01 - Update to upstream gnucash-3.903. (John Ralls)</li>
+        <li>2020-06-01 - Add boost::program_options for new gnucash-cli. (John Ralls)</li>
       </ul>
     </description>
 </release>
