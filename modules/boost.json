@@ -9,7 +9,7 @@
         }
     ],
     "build-commands": [
-        "./bootstrap.sh --prefix=/app --with-libraries=locale,filesystem,system,date_time,regex",
+        "./bootstrap.sh --prefix=/app --with-libraries=locale,filesystem,system,date_time,program_options,regex",
         "./b2 headers",
         "./b2 -j$FLATPAK_BUILDER_N_JOBS install variant=release cxxstd=17 --layout=system"
     ]
