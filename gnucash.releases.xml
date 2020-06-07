@@ -1,8 +1,7 @@
-<release version="3.903" date="2020-06-01">
+<release version="3.904" date="2020-06-07">
     <description>
       <ul>
-        <li>2020-06-01 - Update to upstream gnucash-3.903. (John Ralls)</li>
-        <li>2020-06-01 - Add boost::program_options for new gnucash-cli. (John Ralls)</li>
+        <li>2020-06-07 - Update to upstream gnucash-3.904. (John Ralls)</li>
       </ul>
     </description>
 </release>
