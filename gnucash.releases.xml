@@ -1,6 +1,7 @@
 <release version="3.904" date="2020-06-07">
     <description>
       <ul>
+<li>2020-06-14 - New tarball for 3.905 because of a push during the release process. (John Ralls)</li>
         <li>2020-06-13 - Update to upstream gnucash 3.905. (John Ralls)</li>
         <li>2020-06-09 - Fix source SHA-1s. (John Ralls)</li>
         <li>2020-06-09 - Set default-branch:beta to see if that triggers a beta build. (John Ralls)</li>
