@@ -1,6 +1,7 @@
-<release version="3.904" date="2020-06-07">
+<release version="3.906-1" date="2020-06-21">
     <description>
       <ul>
+        <li>2020-06-21 - Correct the sha256 for gnucash-3.906.tar.bz2 (John Ralls)</li>
         <li>2020-06-21 - Update to upstream GnuCash 3.906 (John Ralls)</li>
       </ul>
     </description>
