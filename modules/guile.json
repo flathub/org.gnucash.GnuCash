@@ -5,6 +5,10 @@
             "type": "archive",
             "url": "https://ftp.gnu.org/gnu/guile/guile-2.2.3.tar.xz",
             "sha256": "8353a8849cd7aa77be66af04bd6bf7a6207440d2f8722e46672232bb9f0a4086"
+        },
+        {
+            "type": "patch",
+            "path": "../patches/0001-Never-recompile.patch"
         }
     ],
     "modules": [
