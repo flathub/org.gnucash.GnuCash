@@ -1,9 +1,8 @@
-<release version="3.10-1" date="2020-04-12">
+<release version="3.11-1" date="2020-06-27">
     <description>
       <ul>
-        <li>2020-04-12 - Update Gwenhywfar URI (John Ralls)</li>
-        <li>2020-04-12 - Package GnuCash 3.10 (John Ralls)</li>
-        <li>2020-04-12 - Update to upestream gnucash 3.10 (John Ralls)</li>
+        <li>2020-06-27 - Update to upstream gnucash 3.11 (John Ralls)</li>
+        <li>2020-06-23 - Bug 797803 - Flatpak fails to launch. (John Ralls)</li>
       </ul>
     </description>
 </release>
