@@ -1,8 +1,7 @@
-<release version="3.11-1" date="2020-06-27">
+<release version="4.0" date="2020-06-27">
     <description>
       <ul>
-        <li>2020-06-27 - Update to upstream gnucash 3.11 (John Ralls)</li>
-        <li>2020-06-23 - Bug 797803 - Flatpak fails to launch. (John Ralls)</li>
+        <li>2020-06-27 - Update to upstream gnucash 4.0 (John Ralls)</li>
       </ul>
     </description>
 </release>
