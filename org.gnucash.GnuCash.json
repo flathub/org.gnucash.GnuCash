@@ -1,8 +1,7 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
-  "default-branch": "beta",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "copy-icon": true,
