@@ -1,7 +1,8 @@
-<release version="4.0" date="2020-06-27">
+<release version="4.0-2" date="2020-07-01">
     <description>
       <ul>
-        <li>2020-06-27 - Update to upstream gnucash 4.0 (John Ralls)</li>
+        <li>2020-06-30 - Update aqbanking and gwenhywfar. (John Ralls)</li>
+        <li>2020-06-30 - Merge branch 'beta'. (John Ralls)</li>
       </ul>
     </description>
 </release>
