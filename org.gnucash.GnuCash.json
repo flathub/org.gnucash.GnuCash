@@ -40,15 +40,7 @@
         "buildsystem": "cmake-ninja",
         "config-opts": [
             "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 4.0-3'"
-        ],
-        "cleanup": [
-            "/share/info",
-            "/share/doc/gnucash/*.csv",
-            "/share/doc/gnucash/*.qif",
-            "/share/doc/gnucash/*.gnucash",
-            "/share/doc/gnucash/ChangeLog*",
-            "/share/doc/gnucash/HACKING",
+            "-DGNUCASH_BUILD_ID='Flathub 4.1",
             "/share/doc/gnucash/README*",
             "/share/doc/gnucash/guile-hackers.txt",
             "/share/doc/gnucash/projects.html"
