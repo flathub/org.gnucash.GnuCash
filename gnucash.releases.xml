@@ -1,8 +1,7 @@
-<release version="4.1-1" date="2020-07-26">
+<release version="4.2" date="2020-09-27">
     <description>
       <ul>
-        <li>2020-07-25 - Change boehm-gc source url to our Dependencies folder on SourceForge. (John Ralls)</li>
-        <li>2020-07-25 - Update to upstream gnucash 4.1. (John Ralls)</li>
+        <li>2020-09-27 - Update to upstream gnucash 4.2 (John Ralls)</li>
       </ul>
     </description>
 </release>
