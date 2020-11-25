@@ -11,7 +11,8 @@
         "-DWITHOUT_TOKUDB=1",
         "-DWITHOUT_EXAMPLE_STORAGE_ENGINE=1",
         "-DWITHOUT_FEDERATED_STORAGE_ENGINE=1",
-        "-DWITHOUT_PBXT_STORAGE_ENGINE=1"
+        "-DWITHOUT_PBXT_STORAGE_ENGINE=1",
+        "-DPLUGIN_AUTH_PAM=NO"
     ],
     "post-install": [
         "make -C libmysql install",
@@ -25,8 +26,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.32/source/mariadb-10.1.32.tar.gz",
-            "sha256": "0e2aae6a6a190d07c8e36e87dd43377057fa82651ca3c583462563f3e9369096"
+            "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.48/source/mariadb-10.1.48.tar.gz",
+            "sha256": "069d58b1e2c06bb1e6c31249eda34138f41fb8ae3dec7ecaeba8035812c87cf9"
         }
     ],
     "modules": [
@@ -39,8 +40,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.0.1/jemalloc-5.0.1.tar.bz2",
-                    "sha256": "4814781d395b0ef093b21a08e8e6e0bd3dab8762f9935bbfb71679b0dea7c3e9"
+                    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.2.1/jemalloc-5.2.1.tar.bz2",
+                    "sha256": "34330e5ce276099e2e8950d9335db5a875689a4c6a56751ef3b1d8c537f887f6"
                 }
             ]
         },

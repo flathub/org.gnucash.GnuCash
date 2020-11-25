@@ -15,8 +15,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.cpan.org/src/5.0/perl-5.28.0.tar.gz",
-                    "sha256": "7e929f64d4cb0e9d1159d4a59fc89394e27fa1f7004d0836ca0d514685406ea8"
+                    "url": "https://www.cpan.org/src/5.0/perl-5.32.0.tar.gz",
+                    "sha256": "efeb1ce1f10824190ad1cadbcccf6fdb8a5d37007d0100d2d9ae5f2b5900c0b4"
                 },
                 {
                     "type": "script",
