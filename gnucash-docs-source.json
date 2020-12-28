@@ -1,5 +1,5 @@
 {
-    "type": "archive",
-    "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/4.3/gnucash-docs-4.3.tar.gz",
-    "sha256": "86eb5a52fc331dc9e2ef61d5f69ad8c050d7220091f48c9b7af31022b4b5b2f4"
+    "type": "git",
+    "path": "/home/john/gnucash-flatpak/src/gnucash-docs.git",
+    "branch": "maint"
 }
