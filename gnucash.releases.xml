@@ -2,6 +2,7 @@
     <description>
       <ul>
         <li>2020-12-28 - Update to upstream gnucash 4.4 (John Ralls)</li>
+        <li>2020-12-29 - Bump GNUCASH_BUILD_ID to poke flathub into doing another build. (John Ralls)</li>
       </ul>
     </description>
 </release>
