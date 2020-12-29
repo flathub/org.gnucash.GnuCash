@@ -1,5 +1,5 @@
 {
-    "type": "git",
-    "path": "/home/john/gnucash-flatpak/src/gnucash-docs.git",
-    "branch": "maint"
+    "type": "archive",
+    "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/4.4/gnucash-docs-4.4.tar.gz",
+    "sha256": "298977e7dddce83335e1f988e6977cb010e37b289c31d09b15df4af526e4ba35"
 }
