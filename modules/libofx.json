@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/libofx/libofx/archive/0.9.14.tar.gz",
-            "sha256": "85a732efe3026e96fe1cf694ebdcf5d2c3b67adba85b9019abac44e7c43d8ce5"
+            "url": "https://github.com/libofx/libofx/archive/0.10.1.tar.gz",
+            "sha256": "1d0562db25b3ddb4b6b90c78dd5d9aaf6ca9c3eb58f9b3ab5bcfc2077823cd0c"
         }
     ],
     "modules": [
@@ -43,12 +43,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.22.6.tar.gz",
-                    "sha256": "30b05a88604d71ef2a42a2ef26cd26df242b41f5b011ad03083143a31d9b01f7"
-                },
-                {
-                    "type": "patch",
-                    "path": "../patches/gengetopt-makefile.patch"
+                    "url": "https://ftp.gnu.org/gnu/gengetopt/gengetopt-2.23.tar.xz",
+                    "sha256": "b941aec9011864978dd7fdeb052b1943535824169d2aa2b0e7eae9ab807584ac"
                 },
                 {
                     "type": "script",
