@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "3.38",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "copy-icon": true,
@@ -13,7 +13,7 @@
     "--socket=x11",
     "--share=ipc",
     "--share=network",
-    "--filesystem=home",
+    "--filesystem=host",
     "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
     "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
   ],
@@ -26,11 +26,11 @@
   "modules": [
     "modules/guile.json",
     "modules/libofx.json",
+    "modules/boost.json",
     "modules/mariadb.json",
     "modules/postgresql.json",
     "modules/libdbi.json",
     "modules/aqbanking.json",
-    "modules/boost.json",
     "modules/googletest.json",
     "modules/perl.json",
     "modules/swig.json",
@@ -39,16 +39,22 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 4.4-4'"
+            "-DBOOST_ROOT=/app"
+            "-DGNUCASH_BUILD_ID='Flathub 4.5'"
+        ],
+        "cleanup": [
+            "/share/info",
+            "/share/doc/gnucash/*.csv",
+            "/share/doc/gnucash/*.qif",
+            "/share/doc/gnucash/*.gnucash",
+            "/share/doc/gnucash/ChangeLog*",
+            "/share/doc/gnucash/HACKING",
+            "/share/doc/gnucash/README*",
+            "/share/doc/gnucash/guile-hackers.txt",
+            "/share/doc/gnucash/projects.html"
         ],
         "sources": [
-            "./gnucash-source.json",
-            {
-                "type": "file",
-                "path": "gnucash.releases.xml",
-                "dest": "gnucash/gnome"
-            }
+            "./gnucash-source.json"
         ]
     },
     {

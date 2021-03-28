@@ -1,12 +1,7 @@
-<release version="4.4" date="2020-12-28">
+<release version="4.5" date="2021-03-28">
     <description>
       <ul>
-        <li>2021-02-13 - Sync dependencies with gnucash-on-flatpak. (John Ralls)</li>
-        <li>2020-12-29 - Package gnucash 4.4-2 (John Ralls)</li>
-        <li>2020-12-29 - Correct the source json files for 4.4 tarballs. (John Ralls)</li>
-        <li>2020-12-29 - Bump GNUCASH_BUILD_ID to poke flathub into doing another build. (John Ralls)</li>
-        <li>2020-12-28 - Package gnucash 4.4 (John Ralls)</li>
-        <li>2020-12-28 - Update to upstream gnucash 4.4 (John Ralls)</li>
+        <li>2021-03-28 - Update to upstream gnucash 4.5 (John Ralls)</li>
       </ul>
     </description>
 </release>
