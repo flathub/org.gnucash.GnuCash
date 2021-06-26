@@ -5,8 +5,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://aquamaniac.de/rdm/attachments/download/366/aqbanking-6.2.9.tar.gz",
-            "sha256": "80eebf586f13823e05a2feeafce318a620900b0490d6a018a91d3318cbe866d2"
+            "url": "https://aquamaniac.de/rdm/attachments/download/372/aqbanking-6.3.0.tar.gz",
+            "sha256": "a0e85da2072c927bc32cfd808caaccfdabe34725e75618b08d8049306d8355cc"
         }
     ],
     "modules": [
@@ -15,8 +15,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.aleksey.com/xmlsec/download/xmlsec1-1.2.29.tar.gz",
-                    "sha256": "b1d1deba966019930f608d1f2b95c40ca3450f1393bcd3a3c001a8ba1d2839ab"
+                    "url": "https://github.com/lsh123/xmlsec/archive/refs/tags/xmlsec-1_2_32.tar.gz",
+                    "sha256": "e33e551fb9f6da5576b1a55ce962048adf337332c27e6be9dba04d360b6a5584"
                 }
             ]
         },

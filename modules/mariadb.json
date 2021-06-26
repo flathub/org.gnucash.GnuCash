@@ -1,33 +1,23 @@
 {
-    "name": "mariadb",
+    "name": "mariadb-connector-c",
     "buildsystem": "cmake",
-    "no-make-install": true,
     "config-opts": [
-        "-DBUILD_CONFIG=mysql_release",
-        "-DWITH_INNOBASE_STORAGE_ENGINE=1",
-        "-DWITHOUT_ARCHIVE_STORAGE_ENGINE=1",
-        "-DWITHOUT_BLACKHOLE_STORAGE_ENGINE=1",
-        "-DWITHOUT_PARTITION_STORAGE_ENGINE=1",
-        "-DWITHOUT_TOKUDB=1",
-        "-DWITHOUT_EXAMPLE_STORAGE_ENGINE=1",
-        "-DWITHOUT_FEDERATED_STORAGE_ENGINE=1",
-        "-DWITHOUT_PBXT_STORAGE_ENGINE=1",
-        "-DPLUGIN_AUTH_PAM=NO"
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DINSTALL_BINDIR=bin",
+        "-DINSTALL_LIBDIR=lib",
+        "-DINSTALL_INCLUDEDIR=include",
+        "-DINSTALL_PLUGINDIR=lib/mariadb/plugin",
+        "-DINSTALL_PCDIR=lib/pkgconfig"
     ],
     "post-install": [
-        "make -C libmysql install",
-        "make -C include install",
-        "install -Dm755 scripts/mysql_config /app/bin/mysql_config",
-        "install -Dm644 support-files/mariadb.pc /app/share/pkgconfig/mariadb.pc"
-    ],
-    "cleanup": [
-        "/bin/"
+        "ln -s /app/bin/mariadb_config /app/bin/mysql_config",
+        "ln -s /app/lib/libmariadb.so.3 /app/lib/libmysqlclient.so"
     ],
     "sources": [
         {
             "type": "archive",
-            "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.48/source/mariadb-10.1.48.tar.gz",
-            "sha256": "069d58b1e2c06bb1e6c31249eda34138f41fb8ae3dec7ecaeba8035812c87cf9"
+            "url": "https://mirrors.syringanetworks.net/mariadb/connector-c-3.1.13/mariadb-connector-c-3.1.13-src.tar.gz",
+            "sha256": "0271a5edfd64b13bca5937267474e4747d832ec62e169fc2589d2ead63746875"
         }
     ],
     "modules": [
