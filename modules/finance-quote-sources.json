@@ -408,7 +408,7 @@
       "url": "https://cpan.metacpan.org/authors/id/E/EC/ECOCODE/Finance-Quote-1.49.tar.gz"
    },
    {
-      "dest-filename": "perl-libs/install.sh",
+      "dest-filename": "install.sh",
       "commands": [
          "set -e",
          "function make_install {",
