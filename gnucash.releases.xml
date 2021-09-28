@@ -1,7 +1,8 @@
 <release version="4.7-0" date="2021-09-26">
     <description>
       <ul>
-        <li>2021-09-25 - Update to upstream 4.7 (John Ralls)</li>
+        <li>2021-09-28 - Update to upstream 4.8 (John Ralls)</li>
+        <li>2021-09-27 - Update mariadb module from gnucash-on-flatpak (John Ralls)</li>
       </ul>
     </description>
 </release>
