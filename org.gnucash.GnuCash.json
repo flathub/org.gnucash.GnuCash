@@ -38,8 +38,8 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DGNUCASH_BUILD_ID='Flathub 4.7-0'",
-            "-DBOOST_ROOT=/app"
+           "-DGNUCASH_BUILD_ID='Flathub 4.8'",
+             "-DBOOST_ROOT=/app"
         ],
         "cleanup": [
             "/share/info",
