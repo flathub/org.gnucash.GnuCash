@@ -14,7 +14,7 @@
     "--share=ipc",
     "--share=network",
     "--filesystem=host",
-    "--metadata=X-DConf=migrate-path=/org/gnucash/GnuCash"
+    "--metadata=X-DConf=migrate-path=/org/gnucash/GnuCash/"
   ],
   "cleanup": [
     "*.a",
