@@ -1,9 +1,7 @@
-<release version="4.8-1" date="2021-10-17">
+<release version="4.9" date="2021-12-19">
     <description>
       <ul>
-        <li>2021-09-28 - Update to upstream 4.8 (John Ralls)</li>
-        <li>2021-09-27 - Update mariadb module from gnucash-on-flatpak (John Ralls)</li>
-        <li>2021-10-17 - Fix metadata=X-DConf=migrate-path (Frank H. Ellenberger)</li>
+        <li>2021-12-18 - Update to upstream 4.9 (John Ralls)</li>
       </ul>
     </description>
 </release>
