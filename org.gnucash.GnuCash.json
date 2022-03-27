@@ -10,10 +10,11 @@
   "rename-appdata-file": "gnucash.appdata.xml",
   "finish-args": [
     "--socket=wayland",
-    "--socket=x11",
+    "--socket=fallback-x11",
     "--share=ipc",
     "--share=network",
     "--filesystem=host",
+    "--device=dri",
     "--metadata=X-DConf=migrate-path=/org/gnucash/GnuCash/"
   ],
   "cleanup": [
@@ -38,8 +39,7 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 4.9-2'"
+            "-DBOOST_ROOT=/app"
         ],
         "cleanup": [
             "/share/info",
