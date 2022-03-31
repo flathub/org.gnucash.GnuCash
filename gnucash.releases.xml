@@ -1,10 +1,7 @@
-<release version="4.10" date="2022-03-27">
+<release version="4.10-1" date="2022-03-31">
     <description>
       <ul>
-        <li>2022-03-27 - Update to upstream 4.10 (John Ralls)</li>
-        <li>2022-01-25 - Fix missing quote. (John Ralls)</li>
-        <li>2021-12-23 - Update README.md (Frank H. Ellenberger)</li>
-        <li>2021-12-23 - Create README.md (Frank H. Ellenberger)</li>
+        <li>Rebuild with gnucash-docs v. 4.10.1</li>
       </ul>
     </description>
 </release>
