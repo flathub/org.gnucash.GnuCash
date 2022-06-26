@@ -1,7 +1,7 @@
-<release version="4.10-1" date="2022-03-31">
+<release version="4.11" date="2022-06-26">
     <description>
       <ul>
-        <li>Rebuild with gnucash-docs v. 4.10.1</li>
+        <li>2022-06-26 - Update to upstream 4.11 (John Ralls)</li>
       </ul>
     </description>
 </release>
