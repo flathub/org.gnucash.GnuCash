@@ -1,7 +1,7 @@
-<release version="4.11" date="2022-06-26">
+<release version="4.12" date="2022-09-25">
     <description>
       <ul>
-        <li>2022-06-26 - Update to upstream 4.11 (John Ralls)</li>
+        <li>2022-09-25 - Update to upstream 4.12. (John Ralls)</li>
       </ul>
     </description>
 </release>
