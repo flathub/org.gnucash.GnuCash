@@ -34,7 +34,7 @@
             "name": "finance-quote",
             "buildsystem": "simple",
             "build-commands": [
-                "./install.sh"
+                "perl-libs/install.sh"
             ],
             "sources": [
                 "./finance-quote-sources.json"
