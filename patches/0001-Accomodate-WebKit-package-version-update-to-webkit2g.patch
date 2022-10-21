@@ -1,0 +1,28 @@
+From 70958279b2bc61fa13fa4ea864e88dc6e009392b Mon Sep 17 00:00:00 2001
+From: John Ralls <jralls@ceridwen.us>
+Date: Tue, 18 Oct 2022 14:46:19 -0700
+Subject: [PATCH] Accomodate WebKit package version update to webkit2gtk-4.1.
+
+---
+ CMakeLists.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ea1f99ca8..f3958ba25 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -211,7 +211,10 @@ if (WITH_GNUCASH)
+     pkg_check_modules (WEBKIT REQUIRED IMPORTED_TARGET webkitgtk-3.0)
+     set(WEBKIT1 1 CACHE INTERNAL "WebKitGtk")
+   else()
+-    pkg_check_modules (WEBKIT REQUIRED IMPORTED_TARGET webkit2gtk-4.0>=2.14.0)
++    pkg_check_modules (WEBKIT IMPORTED_TARGET webkit2gtk-4.0>=2.14.0)
++    if (NOT WEBKIT_FOUND)
++      pkg_check_modules (WEBKIT REQUIRED IMPORTED_TARGET webkit2gtk-4.1)
++    endif()
+     set(WEBKIT2 1 CACHE INTERNAL "WebKit2Gtk4")
+   endif()
+ 
+-- 
+2.37.3
+

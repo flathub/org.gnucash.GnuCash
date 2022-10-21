@@ -1,5 +1,13 @@
+[
 {
     "type": "archive",
     "url": "http://downloads.sourceforge.net/gnucash/gnucash (stable)/4.12/gnucash-4.12.tar.bz2",
     "sha256": "cc8c051a56b8bb433566d6e2890df59f3d895a395c8cf5246c1b728102ce10ae"
+},
+{
+    "type": "patch",
+    "paths": [
+        "patches/0001-Accomodate-WebKit-package-version-update-to-webkit2g.patch"
+    ]
 }
+]
