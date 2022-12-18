@@ -1,10 +1,7 @@
-<release version="4.12-2" date="2022-10-22">
+<release version="4.13" date="2022-12-18">
     <description>
       <ul>
-        <li>2022-10-22 - Update Gnome Platform runtime to 42. (John Ralls)</li>
-        <li>2022-10-16 - Update Finance::Quote to 1.53 (Geert Janssens)</li>
-        <li>2022-09-25 - Package gnucash 4.12. (John Ralls)</li>
-        <li>2022-09-25 - Update to upstream 4.12. (John Ralls)</li>
+        <li>2022-12-18 - Update to upstream 4.13 (John Ralls)</li>
       </ul>
     </description>
 </release>
