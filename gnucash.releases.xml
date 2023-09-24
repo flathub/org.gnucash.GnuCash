@@ -1,7 +1,7 @@
-<release version="5.3" date="2023-06-26">
+<release version="5.4" date="2023-09-24">
     <description>
       <ul>
-        <li>2023-06-26 - Update to upstream 5.3 (John Ralls)</li>
+        <li>2023-09-23 - Update to upstream 5.4 (John Ralls)</li>
       </ul>
     </description>
 </release>
