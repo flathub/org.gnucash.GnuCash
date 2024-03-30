@@ -16,8 +16,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v3.2.7.tar.gz",
-            "sha256": "3c91df959d61cf64957faf633569ccd78e207abd600a2907081845fa47dff5ee"
+            "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v3.3.9.tar.gz",
+            "sha256": "062b9ec5c26cbb236a78f0ba26981272053f59bdfc113040bab904a9da36d31f"
         }
     ],
     "modules": [
@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.2.1/jemalloc-5.2.1.tar.bz2",
-                    "sha256": "34330e5ce276099e2e8950d9335db5a875689a4c6a56751ef3b1d8c537f887f6"
+                    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.3.0/jemalloc-5.3.0.tar.bz2",
+                    "sha256": "2db82d1e7119df3e71b7640219b6dfe84789bc0537983c3b7ac4f7189aecfeaa"
                 }
             ]
         },
@@ -44,17 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio_0.3.110.orig.tar.gz",
-                    "sha256": "e019028e631725729376250e32b473012f7cb68e1f7275bfc1bbcdd0f8745f7e"
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "../patches/link-libs.patch",
-                        "../patches/fix-install-dirs.patch",
-                        "../patches/no-werror.patch",
-                        "../patches/fix-build-flags.patch"
-                    ]
+                    "url": "http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio_0.3.113.orig.tar.gz",
+                    "sha256": "2c44d1c5fd0d43752287c9ae1eb9c023f04ef848ea8d4aafa46e9aedb678200b"
                 }
             ]
         }
