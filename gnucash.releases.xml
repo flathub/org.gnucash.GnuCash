@@ -1,7 +1,7 @@
-<release version="5.6" date="2024-03-31">
+<release version="5.6-1" date="2024-04-01">
     <description>
       <ul>
-        <li>2024-03-31 - Update to upstream 5.6 (John Ralls)</li>
+        <li>2024-04-01 - Restore JSON-Parse to Finance::Quote (John Ralls)</li>
       </ul>
     </description>
 </release>
