@@ -4,8 +4,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://downloads.sourceforge.net/boost/boost/1.76.0/boost_1_76_0.tar.bz2",
-            "sha256": "f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41"
+            "url": "https://downloads.sourceforge.net/boost/boost/1.85.0/boost_1_85_0.tar.bz2",
+            "sha256": "7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617"
         }
     ],
     "build-commands": [

@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnucash.GnuCash",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "44",
+  "runtime-version": "46",
   "sdk": "org.gnome.Sdk",
   "command": "gnucash",
   "copy-icon": true,
@@ -41,8 +41,7 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 5.6-1'"
+            "-DBOOST_ROOT=/app"
         ],
         "cleanup": [
             "/share/info",
