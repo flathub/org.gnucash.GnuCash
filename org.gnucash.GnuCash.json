@@ -15,7 +15,7 @@
     "--share=network",
     "--filesystem=host",
     "--talk-name=org.gtk.vfs.*",
-    "--filesystem=xdg-run/gvfs",
+    "--filesystem=xdg-run/gvfsd",
     "--device=dri",
     "--metadata=X-DConf=migrate-path=/org/gnucash/GnuCash/"
   ],
@@ -41,8 +41,7 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DBOOST_ROOT=/app",
-            "-DGNUCASH_BUILD_ID='Flathub 5.6-2'"
+            "-DBOOST_ROOT=/app"
         ],
         "cleanup": [
             "/share/info",
