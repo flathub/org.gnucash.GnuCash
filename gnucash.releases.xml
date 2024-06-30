@@ -1,7 +1,7 @@
-<release version="5.6-2" date="2024-04-29">
+<release version="5.7" date="2024-06-30">
     <description>
       <ul>
-        <li>2024-04-29 - Update Gnome runtime, Boost, xmlsec, and Finance::Quote. (John Ralls)</li>
+        <li>2024-06-29 - Update to upstream 5.7 (John Ralls)</li>
       </ul>
     </description>
 </release>
