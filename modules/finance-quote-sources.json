@@ -16,73 +16,73 @@
       "}",
       "(make_install perl-libs/JSON-Parse)",
       "(make_install perl-libs/Clone)",
+      "(make_install perl-libs/MIME-Base32)",
+      "(make_install perl-libs/URI)",
+      "(make_install perl-libs/LWP-MediaTypes)",
+      "(make_install perl-libs/Encode-Locale)",
       "(make_install perl-libs/TimeDate)",
       "(make_install perl-libs/HTTP-Date)",
       "(make_install perl-libs/IO-HTML)",
-      "(make_install perl-libs/LWP-MediaTypes)",
-      "(make_install perl-libs/URI)",
-      "(make_install perl-libs/Encode-Locale)",
       "(make_install perl-libs/HTTP-Message)",
-      "(make_install perl-libs/File-Listing)",
-      "(make_install perl-libs/Net-HTTP)",
       "(make_install perl-libs/HTML-Tagset)",
       "(make_install perl-libs/HTML-Parser)",
-      "(make_install perl-libs/HTTP-Cookies)",
-      "(make_install perl-libs/HTTP-Negotiate)",
-      "(make_install perl-libs/Try-Tiny)",
-      "(make_install perl-libs/WWW-RobotRules)",
-      "(make_install perl-libs/libwww-perl)",
+      "(make_install perl-libs/String-Util)",
+      "(make_install perl-libs/ExtUtils-Helpers)",
       "(make_install perl-libs/ExtUtils-Config)",
       "(make_install perl-libs/ExtUtils-InstallPaths)",
-      "(make_install perl-libs/ExtUtils-Helpers)",
-      "(make_install perl-libs/CPAN-Meta-Requirements)",
-      "(make_install perl-libs/ExtUtils-HasCompiler)",
-      "(make_install perl-libs/CPAN-Requirements-Dynamic)",
       "(make_install perl-libs/Module-Build-Tiny)",
       "(make_install perl-libs/Readonly)",
-      "(make_install perl-libs/HTML-TableExtract)",
-      "(make_install perl-libs/OLE-Storage_Lite)",
-      "(make_install perl-libs/IO-Stringy)",
-      "(make_install perl-libs/Digest-Perl-MD5)",
-      "(make_install perl-libs/Crypt-RC4)",
-      "(make_install perl-libs/Spreadsheet-ParseExcel)",
-      "(make_install perl-libs/Archive-Zip)",
-      "(make_install perl-libs/Spreadsheet-XLSX)",
-      "(make_install perl-libs/XML-XPathEngine)",
-      "(make_install perl-libs/Module-Build)",
-      "(make_install perl-libs/Test-Fatal)",
-      "(make_install perl-libs/HTML-Tree)",
-      "(make_install perl-libs/HTML-TreeBuilder-XPath)",
-      "(make_install perl-libs/String-Util)",
+      "(make_install perl-libs/HTTP-Cookies)",
+      "(make_install perl-libs/Text-Template)",
+      "(make_install perl-libs/Mozilla-CA)",
+      "(make_install perl-libs/File-Listing)",
+      "(make_install perl-libs/Net-HTTP)",
+      "(make_install perl-libs/HTTP-Negotiate)",
+      "(make_install perl-libs/WWW-RobotRules)",
+      "(make_install perl-libs/Try-Tiny)",
+      "(make_install perl-libs/libwww-perl)",
       "(make_install perl-libs/File-Which)",
-      "(make_install perl-libs/Capture-Tiny)",
-      "(make_install perl-libs/Path-Tiny)",
-      "(make_install perl-libs/FFI-CheckLib)",
       "(make_install perl-libs/File-chdir)",
+      "(make_install perl-libs/Path-Tiny)",
+      "(make_install perl-libs/Capture-Tiny)",
+      "(make_install perl-libs/FFI-CheckLib)",
       "(make_install perl-libs/Alien-Build)",
       "(make_install perl-libs/Alien-Build-Plugin-Download-GitLab)",
       "(make_install perl-libs/Alien-Libxml2)",
-      "(make_install perl-libs/XML-SAX-Base)",
       "(make_install perl-libs/XML-NamespaceSupport)",
+      "(make_install perl-libs/XML-SAX-Base)",
       "(make_install perl-libs/XML-SAX)",
       "(make_install perl-libs/XML-LibXML)",
+      "(make_install perl-libs/Net-SSLeay)",
+      "(make_install perl-libs/IO-Socket-SSL)",
+      "(make_install perl-libs/LWP-Protocol-https)",
+      "(make_install perl-libs/Module-Build)",
+      "(make_install perl-libs/Test-Fatal)",
+      "(make_install perl-libs/HTML-Tree)",
+      "(make_install perl-libs/YAML)",
+      "(make_install perl-libs/UNIVERSAL-require)",
+      "(make_install perl-libs/XML-XPathEngine)",
+      "(make_install perl-libs/HTML-TreeBuilder-XPath)",
+      "(make_install perl-libs/Spiffy)",
+      "(make_install perl-libs/Test-Base)",
+      "(make_install perl-libs/HTML-Selector-XPath)",
+      "(make_install perl-libs/Test-Requires)",
+      "(make_install perl-libs/Web-Scraper)",
       "(make_install perl-libs/HTTP-CookieJar)",
-      "(make_install perl-libs/XString)",
+      "(make_install perl-libs/HTML-TableExtract)",
+      "(make_install perl-libs/Module-Runtime)",
+      "(make_install perl-libs/Dist-CheckConflicts)",
       "(make_install perl-libs/Role-Tiny)",
       "(make_install perl-libs/Sub-Quote)",
-      "(make_install perl-libs/Module-Runtime)",
       "(make_install perl-libs/Devel-StackTrace)",
-      "(make_install perl-libs/MRO-Compat)",
       "(make_install perl-libs/Eval-Closure)",
+      "(make_install perl-libs/XString)",
+      "(make_install perl-libs/MRO-Compat)",
       "(make_install perl-libs/Specio)",
       "(make_install perl-libs/File-ShareDir-Install)",
-      "(make_install perl-libs/Dist-CheckConflicts)",
-      "(make_install perl-libs/Class-Data-Inheritable)",
-      "(make_install perl-libs/Exception-Class)",
-      "(make_install perl-libs/Params-ValidationCompiler)",
       "(make_install perl-libs/Variable-Magic)",
-      "(make_install perl-libs/Module-Implementation)",
       "(make_install perl-libs/Sub-Exporter-Progressive)",
+      "(make_install perl-libs/Module-Implementation)",
       "(make_install perl-libs/B-Hooks-EndOfScope)",
       "(make_install perl-libs/Package-Stash-XS)",
       "(make_install perl-libs/Package-Stash)",
@@ -91,25 +91,23 @@
       "(make_install perl-libs/namespace-autoclean)",
       "(make_install perl-libs/Class-Inspector)",
       "(make_install perl-libs/File-ShareDir)",
+      "(make_install perl-libs/Class-Data-Inheritable)",
+      "(make_install perl-libs/Exception-Class)",
+      "(make_install perl-libs/Params-ValidationCompiler)",
       "(make_install perl-libs/DateTime-Locale)",
       "(make_install perl-libs/Class-Singleton)",
       "(make_install perl-libs/DateTime-TimeZone)",
       "(make_install perl-libs/DateTime)",
-      "(make_install perl-libs/DateTime-Format-Strptime)",
-      "(make_install perl-libs/JSON)",
-      "(make_install perl-libs/Net-SSLeay)",
-      "(make_install perl-libs/Mozilla-CA)",
-      "(make_install perl-libs/IO-Socket-SSL)",
-      "(make_install perl-libs/LWP-Protocol-https)",
       "(make_install perl-libs/IO-String)",
-      "(make_install perl-libs/YAML)",
-      "(make_install perl-libs/UNIVERSAL-require)",
-      "(make_install perl-libs/Test-Requires)",
-      "(make_install perl-libs/HTML-Selector-XPath)",
-      "(make_install perl-libs/Spiffy)",
-      "(make_install perl-libs/Test-Base)",
-      "(make_install perl-libs/Web-Scraper)",
-      "(make_install perl-libs/Text-Template)",
+      "(make_install perl-libs/JSON)",
+      "(make_install perl-libs/DateTime-Format-Strptime)",
+      "(make_install perl-libs/Archive-Zip)",
+      "(make_install perl-libs/Crypt-RC4)",
+      "(make_install perl-libs/IO-Stringy)",
+      "(make_install perl-libs/Digest-Perl-MD5)",
+      "(make_install perl-libs/OLE-Storage_Lite)",
+      "(make_install perl-libs/Spreadsheet-ParseExcel)",
+      "(make_install perl-libs/Spreadsheet-XLSX)",
       "(make_install perl-libs/Finance-Quote)"
     ],
     "dest": "perl-libs",
@@ -147,18 +145,6 @@
     "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/B-Hooks-EndOfScope-0.28.tar.gz"
   },
   {
-    "dest": "perl-libs/CPAN-Meta-Requirements",
-    "sha256": "6ec7e4697bb5a8cea0ee3c8bd5d4b20ce086168a8084778d6e7a4c37356fdf8b",
-    "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/CPAN-Meta-Requirements-2.143.tar.gz"
-  },
-  {
-    "dest": "perl-libs/CPAN-Requirements-Dynamic",
-    "sha256": "4b590e712b9aca680c3631855ee16a50b84fa0227c362e13b237a75a01489ef5",
-    "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/CPAN-Requirements-Dynamic-0.001.tar.gz"
-  },
-  {
     "dest": "perl-libs/Capture-Tiny",
     "sha256": "6c23113e87bad393308c90a207013e505f659274736638d8c79bac9c67cc3e19",
     "type": "archive",
@@ -184,9 +170,9 @@
   },
   {
     "dest": "perl-libs/Clone",
-    "sha256": "aadeed5e4c8bd6bbdf68c0dd0066cb513e16ab9e5b4382dc4a0aafd55890697b",
+    "sha256": "4c2c0cb9a483efbf970cb1a75b2ca75b0e18cb84bcb5c09624f86e26b09c211d",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/G/GA/GARU/Clone-0.46.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-0.47.tar.gz"
   },
   {
     "dest": "perl-libs/Crypt-RC4",
@@ -208,15 +194,15 @@
   },
   {
     "dest": "perl-libs/DateTime-Locale",
-    "sha256": "7d8a138fa32faf24af30a1dbdee4dd11988ddb6a129138004d220b6cc4053cb0",
+    "sha256": "6c859c17cf274749dfc2c6aaf6bf4b492b605fabdddd23712efbbd5caf601de1",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Locale-1.42.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Locale-1.43.tar.gz"
   },
   {
     "dest": "perl-libs/DateTime-TimeZone",
-    "sha256": "6214f9c9c8dfa2000bae912ef2b8ebc5b163a83a0b5b2a82705162dad63466fa",
+    "sha256": "79ac1c34fb2129b1ad88e0c7090166b98f2a7fd658358f2e1ae7e9bac963cc0f",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-2.62.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-TimeZone-2.63.tar.gz"
   },
   {
     "dest": "perl-libs/Devel-StackTrace",
@@ -256,27 +242,21 @@
   },
   {
     "dest": "perl-libs/ExtUtils-Config",
-    "sha256": "4ef84e73aad50a3be332885d2a3b12f3cab1b1e0bad24e88297a123b4f39f3ce",
+    "sha256": "82e7e4e90cbe380e152f5de6e3e403746982d502dd30197a123652e46610c66d",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Config-0.009.tar.gz"
-  },
-  {
-    "dest": "perl-libs/ExtUtils-HasCompiler",
-    "sha256": "02e1e7275df00682d3ca8ea1c27a30591d6dd08b3e3865c0958afae911635a66",
-    "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-HasCompiler-0.025.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Config-0.010.tar.gz"
   },
   {
     "dest": "perl-libs/ExtUtils-Helpers",
-    "sha256": "9d592131dc5845a86dc28be9143f764e73cb62db06fedf50a895be1324b6cec5",
+    "sha256": "c8574875cce073e7dc5345a7b06d502e52044d68894f9160203fcaab379514fe",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Helpers-0.027.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-Helpers-0.028.tar.gz"
   },
   {
     "dest": "perl-libs/ExtUtils-InstallPaths",
-    "sha256": "65969d3ad8a3a2ea8ef5b4213ed5c2c83961bb5bd12f7ad35128f6bd5b684aa0",
+    "sha256": "ae65d20cc3c7e14b3cd790915c84510f82dfb37a4c9b88aa74b2e843af417d01",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-InstallPaths-0.013.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-InstallPaths-0.014.tar.gz"
   },
   {
     "dest": "perl-libs/FFI-CheckLib",
@@ -316,15 +296,15 @@
   },
   {
     "dest": "perl-libs/Finance-Quote",
-    "sha256": "0d3133b0bf3d779582c566850d577f2bbe8e1acbd11497831cd43d8f31606482",
+    "sha256": "63476a0c827ad1a1dfeca8de3e8a642a24e878c1f4a7a9de6f514d6a8577b28d",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/B/BP/BPSCHUCK/Finance-Quote-1.62.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/B/BP/BPSCHUCK/Finance-Quote-1.63.tar.gz"
   },
   {
     "dest": "perl-libs/HTML-Parser",
-    "sha256": "5b1f20dd0e471a049c13a53d0fcd0442f58518889180536c6f337112c9a430d8",
+    "sha256": "7278ce9791256132b26a71a5719451844704bb9674b58302c3486df43584f8c0",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.82.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-3.83.tar.gz"
   },
   {
     "dest": "perl-libs/HTML-Selector-XPath",
@@ -394,9 +374,9 @@
   },
   {
     "dest": "perl-libs/IO-Socket-SSL",
-    "sha256": "95b2f7c0628a7e246a159665fbf0620d0d7835e3a940f22d3fdd47c3aa799c2e",
+    "sha256": "f683112c1642967e9149f51ad553eccd017833b2f22eb23a9055609d2e3a14d1",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.085.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.089.tar.gz"
   },
   {
     "dest": "perl-libs/IO-String",
@@ -435,6 +415,12 @@
     "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.14.tar.gz"
   },
   {
+    "dest": "perl-libs/MIME-Base32",
+    "sha256": "ab21fa99130e33a0aff6cdb596f647e5e565d207d634ba2ef06bdbef50424e99",
+    "type": "archive",
+    "url": "https://cpan.metacpan.org/authors/id/R/RE/REHSACK/MIME-Base32-1.303.tar.gz"
+  },
+  {
     "dest": "perl-libs/MRO-Compat",
     "sha256": "0d4535f88e43babd84ab604866215fc4d04398bd4db7b21852d4a31b1c15ef61",
     "type": "archive",
@@ -448,9 +434,9 @@
   },
   {
     "dest": "perl-libs/Module-Build-Tiny",
-    "sha256": "79a73e506fb7badabdf79137a45c6c5027daaf6f9ac3dcfb9d4ffcce92eb36bd",
+    "sha256": "74fdce35e8cd4d787bc2d4fc1d43a291b7bbced4e94dc5fc592bd81ca93a98e9",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-0.048.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-0.051.tar.gz"
   },
   {
     "dest": "perl-libs/Module-Implementation",
@@ -466,9 +452,9 @@
   },
   {
     "dest": "perl-libs/Mozilla-CA",
-    "sha256": "624873939e309833894f881464a95dfe74ab77cab5d557308c010487161698e7",
+    "sha256": "55bbee1875a905616e0c39457245f94f8173227fbe906f643673f5adadedf863",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20240313.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20240730.tar.gz"
   },
   {
     "dest": "perl-libs/Net-HTTP",
@@ -550,9 +536,9 @@
   },
   {
     "dest": "perl-libs/String-Util",
-    "sha256": "319ce8cd665341e56521fa155d962a19328e90d9f7036765925ccde26725c469",
+    "sha256": "e089dc4aa714c4801b359df6546f265bad392ca2380309c8900e45b4668bb76e",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/B/BA/BAKERSCOT/String-Util-1.34.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/B/BA/BAKERSCOT/String-Util-1.35.tar.gz"
   },
   {
     "dest": "perl-libs/Sub-Exporter-Progressive",
@@ -604,9 +590,9 @@
   },
   {
     "dest": "perl-libs/Try-Tiny",
-    "sha256": "3300d31d8a4075b26d8f46ce864a1d913e0e8467ceeba6655d5d2b2e206c11be",
+    "sha256": "ef2d6cab0bad18e3ab1c4e6125cc5f695c7e459899f512451c8fa3ef83fa7fc0",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.31.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-0.32.tar.gz"
   },
   {
     "dest": "perl-libs/UNIVERSAL-require",
@@ -616,9 +602,9 @@
   },
   {
     "dest": "perl-libs/URI",
-    "sha256": "e7985da359b15efd00917fa720292b711c396f2f9f9a7349e4e7dec74aa79765",
+    "sha256": "a34b9f626c3ff1e20c0d4a23ec5c8b7ae1de1fb674ecefed7e46791388137372",
     "type": "archive",
-    "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.28.tar.gz"
+    "url": "https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-5.29.tar.gz"
   },
   {
     "dest": "perl-libs/Variable-Magic",

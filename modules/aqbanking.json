@@ -45,9 +45,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.aquamaniac.de/rdm/attachments/download/501/gwenhywfar-5.10.2.tar.gz",
+                     "url": "https://www.aquamaniac.de/rdm/attachments/download/501/gwenhywfar-5.10.2.tar.gz",
                     "sha256": "60a7da03542865501208f20e18de32b45a75e3f4aa8515ca622b391a2728a9e1"
-                }
+               }
             ]
         },
         {
