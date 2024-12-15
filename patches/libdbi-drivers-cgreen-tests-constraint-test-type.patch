@@ -1,0 +1,30 @@
+--- a/tests/cgreen/include/cgreen/constraint.h	2021-10-25 11:31:28.000000000 -0700
++++ b/tests/cgreen/include/cgreen/constraint.h	2024-11-01 12:25:01.654035685 -0700
+@@ -23,12 +23,15 @@
+ } BoxedDouble;
+ 
+ typedef struct Constraint_ Constraint;
++
++typedef void (*ConstraintTest)(Constraint *, const char *, intptr_t, const char *, int, TestReporter *);
++
+ struct Constraint_ {
+     const char* name;
+     const char *parameter;
+     void (*destroy)(Constraint *);
+     int (*compare)(Constraint *, intptr_t);
+-    void (*test)(Constraint *, const char *, intptr_t, const char *, int, TestReporter *);
++    ConstraintTest test;
+     intptr_t expected;
+ };
+ 
+--- a/tests/cgreen/src/constraint.c	2021-10-25 11:31:28.000000000 -0700
++++ b/tests/cgreen/src/constraint.c	2024-11-01 12:25:51.071476755 -0700
+@@ -101,7 +101,7 @@
+ 
+     constraint->parameter = parameter;
+     constraint->compare = &compare_using_matcher;
+-    constraint->test = &test_with_matcher;
++    constraint->test = (ConstraintTest)(&test_with_matcher);
+     constraint->name = matcher_name;
+     constraint->expected = (intptr_t)matcher_function;
+     return constraint;

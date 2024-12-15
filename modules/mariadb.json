@@ -16,8 +16,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v3.3.9.tar.gz",
-            "sha256": "062b9ec5c26cbb236a78f0ba26981272053f59bdfc113040bab904a9da36d31f"
+            "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v3.3.11.tar.gz",
+            "sha256": "6ecada1f3fc32ad95efcd2c982b319191f5e6479f3f521bc4b714e6158f5e415"
         }
     ],
     "modules": [

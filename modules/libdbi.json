@@ -16,8 +16,15 @@
     "sources": [
         {
             "type": "archive",
-            "url": "http://downloads.sourceforge.net/project/libdbi-drivers/libdbi-drivers/libdbi-drivers-0.9.0/libdbi-drivers-0.9.0.tar.gz",
-            "sha256": "43d2eacd573a4faff296fa925dd97fbf2aedbf1ae35c6263478210c61004c854"
+            "url": "http://downloads.sourceforge.net/gnucash/Dependencies/libdbi-drivers-0.9.1.tar.gz",
+            "sha256": "3346b3f09edb2c2464422560ff783f7a7fa1fcd287427f0a8f2db8a1d995acb9"
+        },
+        {
+            "type": "patch",
+            "paths": [
+                "../patches/libdbi-link-map.patch",
+                "../patches/libdbi-drivers-cgreen-tests-constraint-test-type.patch"
+                ]
         },
         {
             "type": "shell",
@@ -30,14 +37,19 @@
         {
             "name": "libdbi",
             "rm-configure": true,
+            "config-opts": [ "--disable-docs" ],
             "cleanup": [
                 "/share"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/project/libdbi/libdbi/libdbi-0.9.0/libdbi-0.9.0.tar.gz",
-                    "sha256": "dafb6cdca524c628df832b6dd0bf8fabceb103248edb21762c02d3068fca4503"
+                    "url": "http://downloads.sourceforge.net/gnucash/Dependencies/libdbi-0.9.1.tar.gz",
+                    "sha256": "870c81447e45ea7f02379dec91ca53f0a28c2438cf88bb3a6491fb4db30db528"
+                },
+                {
+                    "type": "patch",
+                    "path": "../patches/libdbi-link-map.patch"
                 },
                 {
                     "type": "shell",
