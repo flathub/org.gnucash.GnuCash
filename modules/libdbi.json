@@ -6,6 +6,8 @@
         "--with-dbi-libdir=/app/lib/",
         "--with-dbi-incdir=/app/include/",
         "--with-mysql",
+        "--with-mysql-libdir=/app/lib/",
+        "--with-mysql-incdir=/app/include/",
         "--with-pgsql",
         "--with-sqlite3"
     ],
@@ -16,13 +18,12 @@
     "sources": [
         {
             "type": "archive",
-            "url": "http://downloads.sourceforge.net/gnucash/Dependencies/libdbi-drivers-0.9.1.tar.gz",
+            "url": "http://downloads.sourceforge.net/gnucash/libdbi-drivers-0.9.1.tar.gz",
             "sha256": "3346b3f09edb2c2464422560ff783f7a7fa1fcd287427f0a8f2db8a1d995acb9"
         },
         {
             "type": "patch",
             "paths": [
-                "../patches/libdbi-link-map.patch",
                 "../patches/libdbi-drivers-cgreen-tests-constraint-test-type.patch"
                 ]
         },
@@ -44,12 +45,12 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/gnucash/Dependencies/libdbi-0.9.1.tar.gz",
+                    "url": "http://downloads.sourceforge.net/gnucash/libdbi-0.9.1.tar.gz",
                     "sha256": "870c81447e45ea7f02379dec91ca53f0a28c2438cf88bb3a6491fb4db30db528"
                 },
                 {
                     "type": "patch",
-                    "path": "../patches/libdbi-link-map.patch"
+                    "path": "../patches/libdbi-no-version-script.patch"
                 },
                 {
                     "type": "shell",
