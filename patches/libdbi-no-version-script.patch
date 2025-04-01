@@ -1,0 +1,12 @@
+--- a/configure.ac	2025-01-18 12:26:34.017029913 -0800
++++ b/configure.ac	2025-01-18 12:30:22.174166882 -0800
+@@ -88,7 +88,6 @@
+                 DEBUG="-g -Wall -D_REENTRANT -D__NO_MATH_INLINES -fsigned-char"
+                 CFLAGS="-O20 -ffast-math -D_REENTRANT -fsigned-char $CFLAGS"
+                 PROFILE="-pg -g -O20 -ffast-math -D_REENTRANT -fsigned-char"
+-                ld_version_script="yes"
+                 ;;
+         sparc-sun-*)
+                 DEBUG="-g -Wall -D__NO_MATH_INLINES -fsigned-char -mv8"
+
+

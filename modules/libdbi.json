@@ -45,11 +45,7 @@
             "sources": [
                 {
                     "type": "archive",
-<<<<<<< Updated upstream
-                    "url": "http://downloads.sourceforge.net/gnucash/libdbi-0.9.1.tar.gz",
-=======
                     "url": "http://downloads.sourceforge.net/project/gnucash/Dependencies/libdbi-0.9.1.tar.gz",
->>>>>>> Stashed changes
                     "sha256": "870c81447e45ea7f02379dec91ca53f0a28c2438cf88bb3a6491fb4db30db528"
                 },
                 {
