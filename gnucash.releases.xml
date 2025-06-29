@@ -1,7 +1,7 @@
-<release version="5.11-2" date="2025-03-31">
+<release version="5.12" date="2025-06-29">
     <description>
       <ul>
-        <li>2025-03-31 - Fix libdbi.json, commit patch from 5.10 (John Ralls)</li>
+        <li>2025-06-29 - Update to upstream 5.12 (John Ralls)</li>
       </ul>
     </description>
 </release>
