@@ -16,6 +16,7 @@
     "--filesystem=host",
     "--talk-name=org.gtk.vfs.*",
     "--filesystem=xdg-run/gvfsd",
+    "--filesystem=xdg-run/gvfs",
     "--device=dri",
     "--metadata=X-DConf=migrate-path=/org/gnucash/GnuCash/"
   ],
