@@ -1,7 +1,7 @@
-<release version="5.12-1" date="2025-07-04">
+<release version="5.13" date="2025-09-28">
     <description>
       <ul>
-	<li>2025-07-04 - Fix quote retrieval failure, brought from upstream. (John Ralls)</li>
+	<li>2025-09-27 - Update to upstream 5.13 (John Ralls)</li>
       </ul>
     </description>
 </release>
