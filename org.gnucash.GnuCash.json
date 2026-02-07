@@ -24,7 +24,12 @@
     "*.a",
     "*.la",
     "/include",
-    "/lib/pkgconfig"
+    "/lib/cmake",
+    "/lib/pkgconfig",
+    "/man",
+    "/share/aclocal",
+    "/share/info",
+    "/share/man"
   ],
   "modules": [
     "modules/guile.json",
@@ -37,13 +42,13 @@
     "modules/googletest.json",
     "modules/perl.json",
     "modules/swig.json",
-    "./gnucash-extra-modules.json",
+    "gnucash-extra-modules.json",
     {
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
             "-DBOOST_ROOT=/app",
-	    "-DGNUCASH_BUILD_ID='Flathub 5.14'"
+            "-DGNUCASH_BUILD_ID='Flathub 5.14'"
         ],
         "cleanup": [
             "/share/info",
