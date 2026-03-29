@@ -13,6 +13,9 @@
     "build-options": {
         "cflags": "-std=c11"
     },
+    "config-opts": [
+	"--with-ssl=openssl"
+    ],
     "sources": [
         {
             "type": "archive",
