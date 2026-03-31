@@ -43,7 +43,7 @@
         "buildsystem": "cmake-ninja",
         "config-opts": [
             "-DBOOST_ROOT=/app",
-	    "-DBUILD_ID=Flathub-5.15"
+	    "-DGNUCASH_BUILD_ID='Flathub-5.15-1'"
         ],
         "cleanup": [
             "/share/info",
@@ -57,7 +57,11 @@
             "/share/doc/gnucash/projects.html"
         ],
         "sources": [
-            "./gnucash-source.json"
+            "./gnucash-source.json",
+	    {
+		"type": "patch",
+		"path": "patches/gnucash-version-path.patch"
+	    }
         ]
     },
     {

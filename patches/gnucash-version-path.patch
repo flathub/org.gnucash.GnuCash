@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -174,7 +174,7 @@ endif()
+ # Distribution tarballs have this file in the source tree
+ # Git checkouts or zipfiles downloaded straight from github won't have it
+ # and require us to build it.
+-if (BUILDING_FROM_VCS OR NOT EXISTS "${CMAKE_SOURCE_DIR}/libgnucash/core-utilsgnc-vcs-info.h")
++if (BUILDING_FROM_VCS OR NOT EXISTS "${CMAKE_SOURCE_DIR}/libgnucash/core-utils/gnc-vcs-info.h")
+   set(VCS_INFO_BASE_DIR ${CMAKE_BINARY_DIR})
+   set(GENERATE_VCS_INFO "Yes")
+ else()
