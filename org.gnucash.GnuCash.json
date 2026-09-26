@@ -28,7 +28,6 @@
     "/lib/pkgconfig",
     "/man",
     "/share/aclocal",
-    "/share/doc",
     "/share/info",
     "/share/man"    
   ],
@@ -48,8 +47,7 @@
         "name": "gnucash",
         "buildsystem": "cmake-ninja",
         "config-opts": [
-            "-DBOOST_ROOT=/app",
-	    "-DGNUCASH_BUILD_ID='Flathub 5.16'"
+            "-DBOOST_ROOT=/app"
         ],
         "cleanup": [
             "/share/info",
